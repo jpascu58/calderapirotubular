@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title></title>
+		
+        <!-- FAVICON --><link rel="shortcut icon" href="../core/imgs/favicon.ico">
+        
+        <!-- CSS PLUG --><link rel="stylesheet" type="text/css" href="../core/css/ebook.css" />
+        <!-- CSS PLUG --><link rel="stylesheet" type="text/css" href="../core/css/exercises.css" />
+		<!-- CSS PLUG --><!--[if IE 7]><link rel="stylesheet" type="text/css" href="../core/css/ie7.css" /><![endif]-->  
+		
+        <!-- JS PLUG --><script type="text/javascript" language="javascript" src="../core/js/config.js"></script>
+        <!-- JS PLUG --><script type="text/javascript" language="javascript" src="../core/js/core.js"></script>
+        <!-- JS PLUG --><script type="text/javascript" language="javascript" src="../core/js/exercises.js"></script>
+		
+        <script type="text/javascript" language="javascript">
+			$(document).ready(function(){
+				$("body").autoFormsDisplay({"tabs":"","exercise":{"jsTemplate":"all_in_one","order":"1","html":"","alignments":{"data":[{"id":"1","label":"list"},{"id":"2","label":"inline"},{"id":"3","label":"table"},{"id":"4","label":"float"}],"id_alignment":"1"},"config":{"display":"list","data":{"compositequiz":{"quizzes":{"quiz":{"rubric":"<strong>&iquest;A qu&eacute; se deben los diversos colores en la llama de una combusti&oacute;n?<\/strong>","pathImage":"data\/images\/","pathSwf":"data\/animations\/","pathSCO":"http:\/\/","cross_reference":"","order":"1","audioPlayer":{"audio":"","order":""},"image":{"path":"","order":""},"config":{"listen":false,"responsetype_id":"3","element_id":"522","viewSolution":"2","nextExercise":"","caseSensitive":"false","strictMode":"false","modelAnswer":"0","ignoreI":"0","ignorePEA":"0","random":"0","render_in":null,"buttons":{"button":["finished"]},"setup":{"multipleAnswers":"false","autoModelAnswer":"false"}},"questionGroup":{"question":[]}}}}},"hideLegendOnDrop":"false","presentation":"","input":"input","book":{"unit":"5","exercise":"Actividad 1","book":"Cartagena Teor\u00eda Calderas 1","pagepath":"\/201\/222\/223\/657\/659\/","book_id":"2001","section":"4. ELEMENTOS Y SUBSISTEMAS DE LA CALDERA\/4.1 Quemadores\/4.1.2 Elementos del equipo de combusti\u00f3n\/"}}},"support_contents":[{"title":"rules","content":"<div class=\"listado_4\">\n\t<br \/>\n\t<!--CONTENIDO-->\n\t<div class=\"contenido\">\n\t\t<!--LISTA DESORDENADA-->\n\t\t<div class=\"titulo_3\">\n\t\t\tLa llama en una combusti&oacute;n, tiene diversos colores. El color depende fundamentalmente de la temperatura que alcanza, pero tambi&eacute;n depende del combustible que est&aacute; reaccionando con el oxigeno del aire.<br \/>\n\t\t\tEn la combusti&oacute;n se genera calor, ese calor hace que los electrones salten de un estado menos excitado a otro m&aacute;s excitado y en ese proceso liberan energ&iacute;a, fotones, es decir<em><strong> LUZ<\/strong><\/em>, y dependiendo de como sea ese salto ser&aacute; de un color u otro.<br \/>\n\t\t\tCada combustible genera un color de llama, as&iacute;, si quemamos gasoil la llama resultante es de un color <strong>amarillo<\/strong>, y si quemamos gas natural la llama es <strong>azul<\/strong>.<br \/>\n\t\t\tPero el color tambi&eacute;n depende de la temperatura de la llama y cuanto mayor calor desprenda, emite luz de mayor frecuencia, ha de tenerse en cuenta que el rojo tiene menor frecuencia que el azul.<br \/>\n\t\t\tEn una combusti&oacute;n de gasoil, la llama ha de ser de un color amarillo intenso, esto nos indica que la combusti&oacute;n es buena, el color amarillo se genera por las part&iacute;culas de holl&iacute;n quemadas y la temperatura m&aacute;s baja que la de otros combustibles.<br \/>\n\t\t\tCuando una caldera de gasoil tiene una mala combusti&oacute;n por exceso de combustible o defecto de aire, la temperatura de llama se hace menor y la llama adquiere un color<strong> rojizo<\/strong>.<br \/>\n\t\t\tUna manera de distinguir que una caldera de gasoil est&aacute; haciendo una buena combusti&oacute;n es verificando el color de la llama. En una caldera de Gas, la combusti&oacute;n es m&aacute;s limpia, sin tantas part&iacute;culas de holl&iacute;n y adem&aacute;s &eacute;sta se produce a mayor temperatura, es por esto que la llama adquiere un color azulado<\/div>\n\t\t<!--LISTA DESORDENADA--><\/div>\n\t<!--FIN CONTENIDO--><\/div>\n<!--FIN LISTADO 4-->\n<div class=\"clear-fix\">\n\t&nbsp;<\/div>\n&nbsp;","order":"0","showAsImage":"0"}]});
+				   $(".exercise").show(); 
+				   $(".prnt").hide();
+				   $(".navegacion_sco_link").hide();
+				$('.prnt').show();
+				
+				//SETEANDO VALORES ORIGINALES DE FUENTE
+				setOriginalSize( $('.central') );
+				
+				// OFFLINE-MODE
+				if( String(window.location.href).indexOf("file:///")>=0 ){
+					setTimeout(function(){
+						try{
+							if( window.parent ){
+								window.parent.postMessage($(document).height()+"","*");
+							}
+						}catch(e){
+							console.log(e);
+						}
+					}, 100);
+				}
+			});					   
+		</script>
+		
+		<!-- JS PLUG --><script type="text/javascript" language="javascript" src="../core/js/iframe.js"></script>
+		
+		<style>
+			.drag-and-drop{margin-left: 8px;}
+			body{background: #E9F0FA;}
+		</style>
+    </head>
+    <body> 
+        <!-- EXERCISE -->
+		<div class="central">
+        	<div class="page">
+			<div class="prnt" style="float:right;margin: 5px 15px 0 0;cursor: pointer;display: none;"><img class="print" src="../core/imgs/pearlescent/autoforms/ico_print.gif" alt="print" title="Imprimir ejercicio" /></div>
+			<div id="instructions" style="padding: 15px 15px 0px 9px;"><div class="content"></div></div>
+			<div class="workbook-relation" style="display: none;margin-left: 15px;"></div>
+			<div class="clear-fix"></div>
+			<div class="exercise" id="test" style="padding: 10px 10px 60px 10px;">
+				<ul class="anchor-navigation"></ul>
+				<div class="exercise-bar"></div>
+				<div class="exercise-feedback"></div>
+			</div>
+            </div>
+		</div>
+        <!-- ENDING EXERCISE --> 
+    </body>
+</html>
