@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS IE7 */
+
+#go-to-workbook a{width: 150px !important; font-size: 14px;}
+.bt-try-again{width: 110px !important; font-size: 14px;}
+.bt-reset{width: 90px !important; font-size: 14px;}
+.listen-bt{width: 55px !important; font-size: 14px;}
+.bt-check-answers{width: 155px !important; font-size: 14px;}
+.bt-see-next-answer{width: 150px !important; font-size: 14px;}
+.bt-see-all-answers{width: 140px !important; font-size: 14px;}
+#search-button{width: 90px !important; font-size: 14px; }
+#clear-button{width: 75px !important; font-size: 14px; }
+.bt-ok{width: 65px !important; font-size: 14px;}
+.bt-next-exercise{width: 145px !important; font-size: 14px;}
+.bt-finished{width: 110px !important; font-size: 14px;}
+.muestra-editorial{width: 200px !important;}
+.white-button.go-to-unit{width: 185px !important; font-size: 16px;}
+.white-button.english-plus-unit{width: 270px !important; font-size: 16px;}
+.white-button.consolidation-unit{width: 310px !important; font-size: 16px;}
+
+.bt-type-1{top: 0px !important;}
+.resources ul li.top{width: 170px;}
+
+.lbar-content a.bt-close { right: 5px;}
+.drag-and-drop .anchor-navigation{right: 60px;}
+
+.drag-and-drop .drops .drop{text-align: center}
+
+.jp-full-screen{display: none!important;}
+div.jp-audio div.jp-type-single div.jp-interface{height: 37px!important;}
+div.jp-audio div.jp-current-time, div.jp-audio div.jp-duration{top: 9px!important;}
+div.jp-audio div.jp-type-single a.jp-mute, div.jp-audio div.jp-type-single a.jp-unmute{top: 4px!important;}
+div.jp-audio div.jp-progress{top: 10px!important;}
+div.jp-audio div.jp-volume-bar{top: 14px!important;}
+div.jp-separator{top: 24px!important;}
+div.jp-audio div.jp-separator{top: 7px!important;}
+
+#scroll-box{margin-top: -32px;}
+.flashcards .slider-box ul{padding: 0 10px 0 10px;}
+

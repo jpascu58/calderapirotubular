@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+body,html{font-family: "Times", "serif";}
+.inputtext{font-family: "Times", "serif"; background: none; border: none; font-weight: bold; font-size: 15px;}
+select{font-family: "Times", "serif"; background: none; border: none; font-weight: bold; font-size: 15px;color:#000;}
+select option{font-family: "Times", "serif"; font-weight: bold; font-size: 15px; color:#000;}
+.active-exercise ul {list-style: none;}
+.active-exercise h2 {font-size: 14px;}
+.copy{font-size:11px;border-top: 1px solid #999; padding-top:5px; clear: both}
+.clear-fix{clear: both; font-size: 0; line-height: 0; margin:0; padding: 0; height: 0}
+
+/*Contents */
+h1{font-size: 20px; margin: 20px 0 0 0; padding: 15px 0!important; border-top: solid 1px #CCC;}
+.content-tabs h1{font-size: 17px; margin: 10px; padding: 0!important; border: none;}
+.l h1{border: none; margin: 0}
+.l{border: 6px solid #DDD; background: #FFF; padding: 15px;-webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; margin-bottom: 20px;}
+.contents-menu a{color: #000; text-decoration: none;}
+.contents-menu span.title{padding-left: 5px;}
+.r>.content{ padding: 20px 0; display: block;}
+.contents-menu .content ul{list-style: disc;}
+.r .goto-unit-bar, .r .tabMenu{display: none}
+.r ul{margin: 0;}
+
+/* Support contents */
+.key.phrases, .rules, .wordpool{background: #FFFFFF; border: 2px solid #CCC; -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; padding: 15px; margin: 15px 0;}
+
+/* Tables */
+table.exercise-table{border-width: 1px; border-color: #000!important; border-collapse: collapse; color: #000;}
+table.exercise-table > tbody > tr > th{border-width: 1px; padding: 2px 10px; border-style: solid; border-color: #000!important; background-color: #ffffff; text-align: left}
+table.exercise-table > tbody > tr > td{border-width: 1px; padding: 2px 10px; border-style: solid; border-color: #000!important; background-color: #ffffff; text-align: left}
+
+
+
+/* Drag and drop */
+.drags{}
+.drag{height: 25px;}
+.drag, .drag.autoanswer:hover, .drag.checking:hover{background: #FFF; color: #000000; text-align: center; }
+.drag.autoanswer:hover, .drop .drag.checking:hover{margin-bottom: 0; cursor: default}
+.drag.checking:hover{cursor: default}
+.drag.dropped{position: absolute; width: 100%; bottom: 0; }
+.drag .label{margin-right: 10px;}
+.drag .bt-close{display: none}
+.drops{float: left;}
+.drop{ padding: 0 5px 5px 5px; position: relative;  margin: 0 15px 15px 0; min-width: 100px; display:-moz-inline-stack; display:inline-block; zoom:1; *display:inline; text-align: center; vertical-align: top; }
+.drop > img {border: solid 1px #CCC; padding: 5px;}
+.drop .ico_notok, .drop .ico_ok{border: none; padding-top: 5px;}
+.drop .label{ font-weight: bold; font-size: 1em; height: 19px; left: 7px; position: absolute; top: 2px; width: 19px; z-index: 10;}
+.drop .inlineaudio{height: 19px;left: 25px; position: absolute; top: 2px; width: 25px; z-index: 10;}
+.drop .legend{ text-align: center; font-size: 0.9em; margin-top: 5px;}
+.drop .legend.with-border{border: solid 1px #CCC; padding: 10px;}
+.drop .bt-close{display: none}
+.drop .drag, .drop .drag:hover{ margin: 5px 0 0 0;}
+/* Close button display - all by CSS*/
+.drop .drag .bt-close{display: none}
+.drag .bt-close, .drop .drag.autoanswer .bt-close, .drop .drag.checking .bt-close, .ui-draggable-dragging .bt-close, .drop .drag.ui-draggable-dragging .bt-close{display: none}
+/* Text to text */
+.drop.text-to-text{float: none; display: block; text-align: left}
+.drop.text-to-text b{margin: 0 5px;}
+.drop.text-to-text .label{display:-moz-inline-stack; display:inline-block; zoom:1; *display:inline; top: 0; left: 0}
+.drop.text-to-text .label, .drop.text-to-text .legend{padding: 0; margin: 0; font-size: 1em; position: relative}
+
+
+/* Crossword */
+.exercise .crossword ul{margin:0; list-style:none;padding:10px 0 0 10px;}
+.input_cross{font-size:14px;margin-top:6px;width:15px;text-transform: capitalize;text-align:center;border:0;background:transparent;-moz-user-select:none;}
+/*.cell{float:left; width:30px; height:30px;border: 1px solid #CCC; margin:1px; text-align:center;}*/
+.crossword{}
+.quest ul{margin:0; padding:0;list-style:none;}
+.cr{margin-right: 30px!important; margin-left: 0!important; float: left;}
+.crossword-table{min-width: 400px;}
+.cross-input{font-size:14px;margin-top:6px;width:15px;text-transform: capitalize;text-align:center;border:0;background:transparent;-moz-user-select:none;}
+.cross-cell{float:left; width:30px; height:30px;border: 1px solid #000; margin-left:2px; text-align:center; position: relative;}
+.cross-sup{text-align:left;font-size:10px;height:1px;margin-top:-1px;}
+.sup_index{font-size: 10px;height: 15px;left: 0; line-height: 10px;padding: 2px 0 0 2px; position: absolute; top: 0; width: 10px; z-index: 50;}
+.no-border{border: 1px solid #FFF;}
+.cross-margin-top{margin-top: 6px;}
+/*.crossword{font-size:12px; margin-top:2px;}*/
+
+/* word_soup */
+.word-soup{}
+.word-soup .ws{float:left;margin-left:15px;}
+.word-soup .letter{margin:2px;text-align:center;font-size:18px;}
+.word-soup.cell{color:black; float:left; width:28px; height:28px; margin: 0; overflow: hidden; border-collapse: collapse; border: solid 1px white; background: #FFF!important;}
+.word-soup.cell.top{background: #ccc;text-align:center;}
+.word-soup.cell.no-top{background: #ccc;text-align:center;}
+
+/* clickbox */
+.clickbox{}
+.exercise-list {padding: 0;}
+.exercise-list li{line-height: 27px;}
+.clickbox .click{cursor: pointer; color: #FFF; border-bottom: dotted 2px black; padding: 0 1px;}
+.clickbox .exercise-table .click{border: none; border-bottom: dotted 2px black;}
+.clickbox .click.visible{color: #454545; cursor: default; font-weight: bold}
+
+/* Multiple Choice */
+.answers-list{margin: 0; padding: 0; list-style-type: none;}
+
+

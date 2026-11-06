@@ -1,0 +1,6 @@
+@charset "utf-8";
+/* CSS Document */
+.col_izq_unidad.caso_practico .menu{float:left; width:335px; height:auto;  border-bottom: solid 1px #3f678a; border-right: solid 1px #3f678a; color:#474747}
+.col_izq_unidad.caso_practico .boton{float:left; width:23px; height:98px; margin-top:330px; cursor:pointer}
+.col_izq_unidad.caso_practico{ min-width:354px; float:left; border:none; height:auto; color:#474747; position:absolute; width:370px; margin-top:87px}
+.bar_left{z-index:100;}
