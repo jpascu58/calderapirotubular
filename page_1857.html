@@ -1,0 +1,407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <!--CSS COMUN--><link rel="stylesheet" type="text/css" href="../core/css/comun.css" />
+        <!-- CSS --><link rel="Stylesheet" type="text/css" href="../core/css/jHtmlArea.css" />
+        <!-- CSS --><link rel="Stylesheet" type="text/css" href="../core/css/jHtmlArea.ColorPickerMenu.css" />
+		<!-- CSS --><link rel="stylesheet" type="text/css" href="../core/css/multimedia.css" />
+		<!--JS JQUERY--><script type="text/javascript" src="../core/js/jquery-1.7.2.min.js" language="javascript"></script>
+        <!-- JS --><script src="../core/js/jquery/plugins/jquery-ui-1.8.7.custom.min.js" type="text/javascript"></script>
+		
+		<!-- JS PLUG --><script type="text/javascript" language="javascript" src="../core/js/config.js"></script>
+        <!-- JS PLUG --><script type="text/javascript" language="javascript" src="../core/js/core.js"></script>
+        <!-- JS PLUG --><script type="text/javascript" language="javascript" src="../core/js/exercises.js"></script>
+		
+        <!-- JS --><script src="../core/js/jquery/plugins/jquery.dialogextend.js" type="text/javascript"></script>
+        <!-- JS --><script src="../core/js/jquery/plugins/jquery.window.min.js" type="text/javascript"></script>
+        <!-- JS --><script src="../core/js/jquery/plugins/jquery.quickview.js" type="text/javascript"></script>
+        <!-- JS --><script src="../core/js/jquery/plugins/jquery.highlight-3.js" type="text/javascript"></script>
+        <!-- JS --><script src="../core/js/jquery/plugins/jquery.cookie.js" type="text/javascript"></script>
+        <!-- JS --><script src="../core/js/jquery/plugins/jquery.print.js" type="text/javascript"></script>
+        <!-- JS --><script src="../core/js/jquery/plugins/jquery.treeview.js" type="text/javascript"></script>
+        <!-- JS --><script src="../core/js/jquery/plugins/jHtmlArea-0.7.0.min.js" type="text/javascript"></script>
+        <!-- JS --><script src="../core/js/jquery/plugins/jHtmlArea.ColorPickerMenu-0.7.0.min.js" type="text/javascript"></script>
+        <!-- JS --><script src="../core/js/jquery/plugins/jquery.tabify.js" type="text/javascript"></script>
+		<!-- JS --><script src="../core/js/jquery/plugins/jquery.mobile.custom.min.js" type="text/javascript"></script>
+        <!-- JS --><script src="../core/js/Swfobject.js" type="text/javascript"></script>
+        <!-- JS --><script src="../core/js/jquery.nicescroll.js" type="text/javascript"></script>
+		<!-- JS --><script src="../core/js/jquery.print.book.cartagena.js" type="text/javascript"></script>
+		<script type="text/javascript"> var pagina_html = ''; </script>
+		<!--JS COMUN--><script type="text/javascript" src="../core/js/comun.js" language="javascript"></script>
+		<script type="text/javascript" language="javascript">
+			jQuery(document).ready(function(){
+				$('.menu').hide();
+			});
+		</script>
+<title>Cartagena - 3.2.1 Control de combustión</title>
+</head>
+
+<body style="-moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;">
+<div class="tooltip"><div class="flechita"><div class="icono"></div></div><div class="content_tootltip"></div></div>
+<div id="contenedor_menu_herramientas" class="contenedor_menu_herramientas">
+	<div class="cabecera"></div>
+	<div class="contenido"></div>
+</div>
+
+	<!--BODY-->
+    <div class="body">
+		<!--COL IZQ-->
+		<div class="col_izq_unidad caso_practico" style="position: absolute; margin-left: 10px; display: hidden;">
+							<!--MENU-->
+			<div class="menu" style="left: -400px;">
+				<!--ITEM--><div onclick="IrA('page_1760.html')" class="item verde content_false "><div class="contenido"><div class="icono caso_practico"></div><div class="texto">3. SISTEMA DE CONTROL <op></op></div><div class="clear-fix"></div></div></div><!--ITEM--><div class="item content_true "><div class="contenido"><div class="icono_open" id="menu_1762"></div><div onclick="IrA('page_1762.html')" class="texto">3.1 Instalación SCADA</div><div class="clear-fix"></div></div></div><div  class="sub_menu" id="submenu_1762"><!--ITEM--><div onclick="IrA('page_1850.html')" class="item"><div class="contenido"><div class="texto">3.1.1 Instalación proyecto calderas pirotubulares</div><div class="clear-fix"></div></div></div><!--ITEM--><div onclick="IrA('page_1851.html')" class="item"><div class="contenido"><div class="texto">3.1.2 Ejecución sistema calderas</div><div class="clear-fix"></div></div></div></div><!--ITEM--><div class="item content_true  open"><div class="contenido"><div class="icono_open" id="menu_1763"></div><div onclick="IrA('page_1763.html')" class="texto">3.2 Interfaz del usuario</div><div class="clear-fix"></div></div></div><div style="display:block;" class="sub_menu" id="submenu_1763"><!--ITEM--><div onclick="IrA('page_1857.html')" class="item active"><div class="contenido"><div class="texto">3.2.1 Control de combustión</div><div class="clear-fix"></div></div></div><!--ITEM--><div onclick="IrA('page_1859.html')" class="item"><div class="contenido"><div class="texto">3.2.2 Control de caldera</div><div class="clear-fix"></div></div></div></div>
+			</div>
+			<!--FIN MENU-->
+			<div class="bar-line-1"></div>
+			<!--BOTON--><div class="boton"><img src="../core/imgs/sumario.png" /></div>
+		</div>
+		<!--FIN COL IZQ-->
+    	<!--BAR LEFT<div class="bar_left"></div>-->
+       <!--CONTENT-->
+        <div class="content caso_practico">
+	        <!--HEADER-->
+        	<div class="header">
+            	<div class="titulo">
+                	<!--<span class="titulo_principal">#TITLE_BOOK#</span>-->
+					<div class="titulo_principal">Manual de Operador de Calderas Pirotubulares</div>
+					<div class="titulo_principal2">M&Oacute;DULO DESCRIPTIVO</div>
+                </div>
+				<!--MENU SUPERIOR-->
+                <div class="menu_superior">
+                    <!--ITEM--><div width="90" titulo="Imprimir" class="item print"></div>
+                    <!--ITEM--><div width="150" titulo="Disminuir tipografía" class="item a_menos"></div>
+                    <!--ITEM--><div width="152" titulo="Aumentar tipografía" class="item a_mas"></div>
+                    <!--ITEM--><div width="255" titulo="Expandir/Contraer columna lateral" class="item colapse_menu"></div>
+                    <!--ITEM--><div width="25" titulo="PDI" class="item pdi"></div>
+                </div>
+                <!--FIN MENU SUPERIOR-->
+                
+                
+        	</div>
+        	<!--FIN HEADER-->
+			<!--CONTENT MIGAS MENU-->
+            <div class="content_migas_menu">
+                <!--CAMINO MIGAS-->
+                <div class="camino_migas">
+                    <div class="icono"></div>
+                    <!--TEXTO CAMINO-->
+                    <div class="texto">
+                        <span><a href="portada.html">&Iacute;ndice</a></span> / <span><a href="page_1760.html">3. SISTEMA DE CONTROL <op></op></a></span> / <span><a href="page_1763.html">3.2 Interfaz del usuario</a></span> / <span><a href="page_1857.html">3.2.1 Control de combustión</a></span>
+                    </div>
+                    <!--FIN TEXTO CAMINO-->
+                </div>
+                <!--FIN CAMINO MIGAS-->
+				<!--MENU SUPERIOR-->
+                <div class="menu_superior pdi-activo">
+                    <!--ITEM--><div width="25" titulo="PDI" class="item pdi"></div>
+                </div>
+                <!--FIN MENU SUPERIOR-->
+            </div>
+   			<!--FIN CONTENT MIGAS MENU-->
+			<div class="clear-fix"></div>
+			<!--BARRA AZUL--><div class="barra_azul"><div class="texto"><span class="titulo_principal">3.2.1 Control de combustión</span></div></div>
+			<div class="clear-fix"></div>
+           <!--CONTENT COL CENTRAL MENU DERECHO-->
+           <table class="content_col_central_menu_der">
+           		<tr>
+                   <!--COL CENTRAL-->
+                   <td class="col_central">
+                   <!--CONTENT COL CENTRAL-->
+                   <div class="content_col_central">
+ 						<span style="color:#003366;"><strong>QUEMADOR</strong></span><br />
+<br />
+Pueden ser enumerados como los elementos que intervienen en la combusti&oacute;n los siguientes elementos:<br />
+<ol>
+	<li>
+		<strong>Quemadores</strong>&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;Son dos elementos mostrados en pantalla por un c&iacute;rculo al lado de las soplantes.</li>
+	<li>
+		<strong>Soplantes</strong>&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;Son dos elementos mostrados en pantalla cerca de los quemadores.</li>
+</ol>
+<div style="text-align: center;">
+	<img alt="" src="data/files/5579.png" style="width: 265px; height: 318px;" /><br />
+	<br />
+	<span style="font-weight: bold; line-height: 12px;">Figura 56. Quemadores y Soplantes</span><strong>.</strong></div>
+<br />
+Para acceder al quemador deber&aacute; pulsarse sobre el c&iacute;rculo situado al lado de la soplante.<br />
+<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5793.jpg" style="width: 695px; height: 703px;" /><br />
+	<br />
+	<span style="font-weight: bold; line-height: 12px;">Figura 57. Acceso al quemador</span><strong>.</strong></div>
+<br />
+<br />
+Una vez que se accede, podr&aacute;n cambiarse los siguientes elementos:<br />
+<ul>
+	<li>
+		<strong>Estado de funcionamiento del elemento</strong>&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;Puede cambiarse de estado Auto / Manual. Para hacerlo se utilizar&aacute; el selector y se cambiar&aacute; hacia el estado que se desee utilizar. El estado de &ldquo;Auto&rdquo; se mostrar&aacute; en color verde y el estado &ldquo;Manual&rdquo; se mostrar&aacute; en rojo.</li>
+	<li>
+		<strong>Apertura&nbsp;</strong>&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;Si el elemento est&aacute; en modo manual podremos cambiar el % de apertura del quemador. Asimismo se identificar&aacute; con un c&oacute;digo de colores dependiendo de la apertura del mismo:
+		<ul style="margin-left: 40px;">
+			<li>
+				0 &ndash; 20 %&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;Color amarillo.</li>
+			<li>
+				21 &ndash; 100&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;Color rojo.</li>
+		</ul>
+	</li>
+</ul>
+<br />
+El funcionamiento del quemador sigue un programa de <strong>secuencias de encendido</strong>.<br />
+<br />
+Para proceder al encendido deber&aacute; cumplir con los denominados &ldquo;<strong>Permisivos de Arranque</strong>&rdquo;. Para comprobar todos los permisivos, existe una pantalla en la que podr&aacute;n comprobarse todos los permisivos necesarios.<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5709.png" style="width: 122px; height: 125px;" /><br />
+	<br />
+	<span style="font-weight: bold; line-height: 12px;">Figura 58. Bot&oacute;n de acceso a permisivos</span><strong>.</strong></div>
+<br />
+Para acceder a esta pantalla tendremos un bot&oacute;n de entrada en la pantalla principal de la caldera. Una vez pulsado el bot&oacute;n, nos aparecer&aacute; la <strong>pantalla de permisivos</strong>:<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5734.png" style="width: 680px; height: 583px;" /><br />
+	<br />
+	<span style="font-weight: bold; line-height: 12px;">Figura 59. Pantalla de permisivos</span><strong>.</strong><br />
+	&nbsp;</div>
+<br />
+<br />
+Esta pantalla estar&aacute; dividida en varias &aacute;reas:<br />
+<ul class="lista_desordenada">
+	<li>
+		En la parte superior izquierda se encuentra la visualizaci&oacute;n de una variable con un resumen de enclavamientos. Cuando los permisivos est&aacute;n superados (es decir, cuando se cumple la condici&oacute;n) el color del texto se encuentra en verde. Si por el contrario, la condici&oacute;n para evitar el permisivo no ha sido superada, el color del texto aparecer&aacute; en rojo. Asimismo estar&aacute;n los permisivos de arranque de los quemadores:
+		<ul style="margin-left: 40px;">
+			<li>
+				V&aacute;lvula chimenea de la caldera est&eacute; abierta.</li>
+			<li>
+				Presencia de tensi&oacute;n.</li>
+			<li>
+				Nivel m&iacute;nimo de agua de seguridad.</li>
+			<li>
+				No exista exceso de presi&oacute;n de vapor.</li>
+			<li>
+				No exista exceso de temperatura.</li>
+		</ul>
+	</li>
+	<li>
+		En la parte superior derecha se visualizar&aacute; el modo de funcionamiento de la caldera donde cambiar el mismo. Para ello existen botones de actuaci&oacute;n en cada uno de los modos.</li>
+	<li>
+		En la parte derecha de la pantalla se encuentran los modos de funcionamiento de cada uno de los componentes de los elementos de combusti&oacute;n (quemadores) y de aire (soplantes). Todos los elementos deber&aacute;n estar en &ldquo;Autom&aacute;tico&rdquo;. Los botones de actuaci&oacute;n situados al lado de las descripciones permiten cambiar dichos modos de funcionamiento (Autom&aacute;tico / Manual).</li>
+	<li>
+		En la parte inferior de la misma se sit&uacute;an todos los elementos sobre el estado de corrosi&oacute;n de la caldera:
+		<ul style="margin-left: 40px;">
+			<li>
+				Bot&oacute;n para corregir la corrosi&oacute;n de la caldera. Este bot&oacute;n permite reinicializar el estado de corrosi&oacute;n a su estado inicial. Una vez que se ha superado el estado de corrosi&oacute;n de la caldera, el alumno deber&aacute; realizar un reset manual de la alarma pulsando este bot&oacute;n. Si no se realiza esta acci&oacute;n, la caldera no podr&aacute; volver a operar ya que no se ha corregido la rotura de la misma.</li>
+			<li>
+				N&uacute;mero de MicrosSiemens.</li>
+			<li>
+				Estado de la caldera (Estable / Corrosi&oacute;n).</li>
+			<li>
+				Tiempo que lleva de corrosi&oacute;n.</li>
+		</ul>
+	</li>
+</ul>
+<br />
+Para salir de la pantalla se utilizar&aacute; el bot&oacute;n situado en la parte superior de la misma. &nbsp;<img alt="" src="data/files/5356.jpg" style="width: 70px; height: 46px;" /><br />
+<br />
+<span style="color:#ff8c00;"><strong>SECUENCIAS DE ENCENDIDO</strong></span><br />
+<br />
+Para realizar todas las acciones se dispone de una pantalla espec&iacute;fica denominada &ldquo;<strong>Arranque Quemadores</strong>&rdquo;. A esta pantalla se accede mediante un bot&oacute;n situado en la parte inferior de la pantalla de caldera.<br />
+<div style="text-align: center;">
+	<br />
+	<img alt="" src="data/files/5708.png" /><br />
+	<br />
+	<span style="font-weight: bold; line-height: 12px;">Figura 60. Bot&oacute;n de arranque de quemadores</span><strong>.</strong></div>
+<br />
+Las condiciones de acceso a esta pantalla pueden ser observadas en la pantalla de permisivos descrita en este cap&iacute;tulo. Si alguno de los permisivos de arranque no se cumpliera, aparecer&aacute; un mensaje indicando tal circunstancia. Adem&aacute;s, est&aacute; limitado el acceso a esta pantalla una vez arrancada la caldera.<br />
+<br />
+La pantalla de arranque se abre en modo di&aacute;logo, es decir, no se permite operar con otros elementos de la caldera hasta no haber finalizado la secuencia de arranque o bien si el usuario decide terminar la utilizaci&oacute;n de la pantalla.<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5735.png" style="width: 680px; height: 500px;" /><br />
+	<br />
+	<span style="font-weight: bold; line-height: 12px;">Figura 61. Pantalla de&nbsp;</span><span style="font-weight: bold; line-height: 12px;">arranque de quemadores</span><strong>.</strong><br />
+	&nbsp;</div>
+<br />
+En esta pantalla se pueden realizar, en un orden determinado, las secuencias de arranque. Dicho orden, de obligado cumplimiento, es el siguiente:
+<ol>
+	<li>
+		<strong>Test Barrido.</strong></li>
+	<li>
+		<strong>Test Estanqueidad.</strong></li>
+	<li>
+		<strong>Encendido de la caldera.</strong></li>
+</ol>
+<br />
+En el caso de intentar realizar alguno de los pasos antes que otro, para adelantar el arranque de la caldera, aparecer&aacute; un mensaje indicando tal circunstancia.<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5583.png" style="width: 469px; height: 158px;" /><br />
+	<br />
+	<span style="font-weight: bold; line-height: 12px;">Figura 62. Mensaje indicando error en la secuencia de arranque</span><strong>.</strong></div>
+<br />
+Las condiciones de seguridad son:<br />
+<ul>
+	<li>
+		<strong>Soplantes en Autom&aacute;ticos</strong> (Todas).</li>
+	<li>
+		<strong>Quemadores en Autom&aacute;tico</strong> (Todos).</li>
+	<li>
+		Haber realizado el <strong>Test de Barrido</strong> o el <strong>Test de Estanqueidad</strong> seg&uacute;n los casos.</li>
+</ul>
+Tambi&eacute;n se encuentra situado, en la parte superior derecha de la pantalla, el cambio de los modos de funcionamiento de la caldera.<br />
+<br />
+El resto de elementos en la pantalla son todas las caracter&iacute;sticas de cada uno de los elementos de combusti&oacute;n de la caldera (Soplantes y Quemadores).<br />
+<br />
+Para salir de la pantalla se utilizar&aacute; el bot&oacute;n situado en la parte superior de la misma. &nbsp;<img alt="" src="data/files/5356.jpg" style="width: 70px; height: 46px;" /><br />
+<br />
+<strong>Test de Barrido</strong><span style="color:#ff8c00;"><strong>&nbsp;</strong></span>&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;El ciclo del quemador, se inicia con un barrido previo en donde se pone en marcha el ventilador. En este instante, el servomotor de aire del quemador, abre totalmente el registro de aire y, durante un per&iacute;odo, lo mantiene al m&aacute;ximo, bajando al cabo de dicho tiempo a la posici&oacute;n de m&iacute;nimo. Todo este proceso se realiza con las v&aacute;lvulas de gas cerradas.<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5783.png" style="width: 395px; height: 315px;" /><br />
+	<br />
+	<span style="font-weight: bold; line-height: 12px;">Figura 63. Test de barrido</span><strong>.</strong></div>
+<br />
+<br />
+<strong>Test de Estanqueidad</strong>&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;Previo al encendido se comprueba la estanqueidad del circuito de gas. Para ello se cerrar&aacute;n las v&aacute;lvulas principales de gas:
+<ul style="margin-left: 80px;">
+	<li>
+		<strong>XV18</strong> que es la v&aacute;lvula de Todo / Nada de entrada principal de gas.</li>
+	<li>
+		<strong>XV09</strong> y <strong>XV10</strong> que son las v&aacute;lvulas de entrada a cada uno de los quemadores.</li>
+</ul>
+<br />
+Una vez cerradas estas v&aacute;lvulas ha de comprobarse que la presi&oacute;n se mantiene en 4 bar. Con el cumplimiento de estas condiciones el test de estanqueidad se dar&aacute; por correcto.<br />
+<br />
+<br />
+<span style="color:#003366;"><strong>LAZOS DE REGULACI&Oacute;N DE LA COMBUSTI&Oacute;N.</strong></span><br />
+<br />
+La regulaci&oacute;n de la combusti&oacute;n se realizar&aacute; mediante los lazos de control de las v&aacute;lvulas A017 y A019.<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5408.jpg" style="width: 624px; height: 568px;" /><br />
+	<br />
+	<span style="font-weight: bold; line-height: 12px;">Figura 64. Lazos de regulaci&oacute;n de la combusti&oacute;n</span><strong>.</strong><br />
+	&nbsp;</div>
+<br />
+Estos lazos de control programar&aacute;n el marco de trabajo de los elementos de combusti&oacute;n (quemadores y soplantes) siempre que estos se encuentren en modo autom&aacute;tico.<br />
+<br />
+Para acceder a los lazos de control tendremos los botones de acceso. &nbsp;<img alt="" src="data/files/5360.jpg" style="width: 70px; height: 46px;" /><br />
+<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5584.png" style="width: 680px; height: 239px;" /><br />
+	<br />
+	<span style="font-weight: bold; line-height: 12px;">Figura 65. Pantalla de Lazos de regulaci&oacute;n</span><strong>.</strong></div>
+<br />
+En la/s pantalla/s de control de lazos tendremos los elementos para controlar las v&aacute;lvulas de control de flujo de vapor. Los elementos principales son los siguientes:<br />
+<ul class="lista_desordenada">
+	<li>
+		Bot&oacute;n para poner el lazo de control en Autom&aacute;tico / Manual.</li>
+	<li>
+		Consigna del lazo.</li>
+	<li>
+		Apertura de la v&aacute;lvula.</li>
+	<li>
+		Tendencias del lazo.</li>
+</ul>
+<br />
+La regulaci&oacute;n de la combusti&oacute;n por tanto se realizar&aacute; mediante los lazos principales de dichas v&aacute;lvulas. Estos lazos posibilitan el control de los lazos de regulaci&oacute;n de los quemadores, soplantes y la v&aacute;lvula de regulaci&oacute;n del gas.<br />
+<br />
+<br />
+<span style="color:#003366;"><strong>SOPLANTES DE AIRE</strong></span><br />
+<br />
+El aire necesario para la combusti&oacute;n, es generado por un ventilador para ser introducido en el quemador.<br />
+<br />
+Las pantallas para operar ambos elementos son las siguientes:<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5794.jpg" style="width: 559px; height: 376px;" /><br />
+	<br />
+	<span style="font-weight: bold; line-height: 12px;">Figura 66. Pantalla de Soplantes de aire</span><strong>.</strong></div>
+<br />
+Para entrar en la pantalla deberemos pulsar sobre el icono de la soplante que queramos mostrar. Una vez que hayamos accedido podremos cambiar los siguientes elementos:<br />
+<ul>
+	<li>
+		<strong>Estado de funcionamiento del elemento&nbsp;</strong>&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;Para cambiar de estado Auto / Manual, se utiliza el selector y cambi&aacute;ndolo hacia el estado que se desea utilizar. El estado de &ldquo;Auto&rdquo; se mostrar&aacute; en color verde y el estado &ldquo;Manual&rdquo; se mostrar&aacute; en rojo.</li>
+	<li>
+		<strong>Apertura&nbsp;</strong>&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;Si el elemento est&aacute; en modo manual se puede cambiar el % de apertura del soplante. Esto afectar&aacute; a las revoluciones de funcionamiento de la misma hasta un tope de 3000 rpm.</li>
+</ul>
+<br />
+<br />
+
+                    <div class="clear-fix"></div>
+               <!--BOTONES-->
+               <div class="botones">
+                   <div class="bt_prev"><div class="bt_gris_gadient footer_bt_prev flotar_l" onclick="IrA('page_1763.html')"><div class="img_prev"></div></div><div class="flotar_l">3.2 Interfaz del usuario</div></div>
+        <div class="bt_next"><div class="bt_gris_gadient footer_bt_next flotar_r" onclick="IrA('page_1859.html')" ><div class="img_next"></div></div><div class="flotar_r">3.2.2 Control de caldera</div></div>
+               </div>
+               <!--FIN BOTONES-->
+               <div class="clear-fix"></div>               
+               </div>
+               <!--FIN CONTENT COL CENTRAL-->
+               </td>
+               <!--FIN COL CENTRAL-->
+               
+               <!--MENU HERRAMIENTAS-->
+               <td class="menu_herramientas" valign="top">
+               		<table><tr>
+								<td>
+								<!--BT--><div class="bt"><div class="cabecera_bt bt_1"><div class="titulo">Buscador</div></div></div>
+								<div class="clear-fix"></div>
+								<div class="content_menu" nro="0">
+									<input class="buscador" type="text" value=""/>
+									<div class="button_naranja flotar_l" id="reset">Desmarcar</div>
+									<div class="button_naranja flotar_r" id="buscar">Buscar</div>
+									<div class="clear-fix"></div>
+								</div>
+								</td>
+							 </tr><tr>
+                    						<td>
+											<!--BT--><div class="bt"><div class="cabecera_bt bt_3"><div class="titulo">Archivos</div></div></div>
+											<div class="clear-fix"></div>
+											<div class="content_menu documentos" nro="2">
+												<div class="content_documentos"><div class="item_doc" onclick="irABlank('data/files/5312.pdf')"><div class="icono uno"></div><div class="texto">Reglamento de Equipos a Presión</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('data/files/5332.pdf')"><div class="icono uno"></div><div class="texto">Manual de instalación y uso de entorno 3d</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('data/files/5815.pdf')"><div class="icono uno"></div><div class="texto">bibliografía_libro_calderas</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('data/files/5822.pdf')"><div class="icono uno"></div><div class="texto">Referencias Multimedia Módulo Operativo</div><div class="icono_flechita"></div><div class="clear-fix"></div></div></div>
+											</div>
+											</td>
+										</tr> <tr>
+											<td>                        
+											<!--BT--><div class="bt"><div class="cabecera_bt bt_5"><div class="titulo">V&iacute;nculos web</div></div></div>
+											<div class="clear-fix"></div>
+											<div class="content_menu" nro="4">
+												<div class="content_vinvulos"><div class="item_doc" onclick="irABlank('http://es.wikipedia.org/w/index.php?title=Bomba_centr%C3%ADfuga&oldid=64750852')"><div class="icono uno"></div><div class="texto">Bomba Centrífuga</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('http://es.wikipedia.org/w/index.php?title=Control_de_nivel&oldid=59846470')"><div class="icono uno"></div><div class="texto">Control de nivel</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('http://www.pagina66.com/2011/03/01/expertos-el-color-de-la-llama/')"><div class="icono uno"></div><div class="texto">Color de la llama</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('http://libros.redsauce.net')"><div class="icono uno"></div><div class="texto">Centrales térmicas</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('http://www.agenciaandaluzadelaenergia.es/glosary/list')"><div class="icono uno"></div><div class="texto">Glosario de términos</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('http://www.juntadeandalucia.es/organismos/economiainnovacioncienciayempleo/areas/industria/instaladores/paginas/operador-industrial-de-calderas.html')"><div class="icono uno"></div><div class="texto">Examen Operador de Calderas</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('http://www.monografias.com/trabajos93/descripcion-del-funcionamiento-generador-vapor/descripcion-del-funcionamiento-generador-vapor.shtml')"><div class="icono uno"></div><div class="texto">Generador de vapor</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('http://www.babcock-wanson.es/hi/calderas_pirotubulares.htm')"><div class="icono uno"></div><div class="texto">Calderas y Accesorios</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('http://www.eminfor.com/es/arti03.htm')"><div class="icono uno"></div><div class="texto">UNE-EN 12953-10:2004</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('http://www.valtec-umisa.es/web/?lang=es')"><div class="icono uno"></div><div class="texto">Valtec-Umisa</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('http://es.slideshare.net/siulorot89/18360134-manualcalderas')"><div class="icono uno"></div><div class="texto">Manual de calderas Industriales</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('http://www.fenercom.com/pdf/publicaciones/Guia-basica-calderas-industriales-eficientes-fenercom-2013.pdf')"><div class="icono uno"></div><div class="texto">Guía calderas industriales</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('http://www.spiraxsarco.com/es/')"><div class="icono uno"></div><div class="texto">Calderas spiraxsarco</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('http://187.141.81.212/biblioteca/MAQUINAS/libro%20Calderas.pdf')"><div class="icono uno"></div><div class="texto">Libro calderas</div><div class="icono_flechita"></div><div class="clear-fix"></div></div></div>
+											</div>
+											</td>
+										</tr></table>
+               </td>
+               <!--FIN MENU HERRAMIENTAS-->
+            <!--CONTENT COL CENTRAL MENU DERECHO-->
+            </tr>
+            </table>
+			
+			<!-- NUMERO DE PAGINA -->
+			<div class="clear-fix"></div> 
+			<div class="number-of-page">P&aacute;gina 92</div>
+			<div class="clear-fix"></div>
+			
+            <!--FOOTER-->
+            <div class="footer">
+            	<!--BOTONES-->
+                <div class="botones">
+                    <div onclick="openDialog('creditos', '825', '385', 'CRÉDITOS')" class="bt">Créditos</div>
+                    <div class="sep">></div>
+                    <div onclick="openDialog('aviso_legal', '825', '385', 'AVISO LEGAL')" class="bt">Aviso legal</div>
+                </div>
+                <!--FIN BOTONES-->
+				<!--SPONSOR-->
+                <div class="sponsor">
+                	<img src="../core/imgs/sponsor.jpg" />
+                </div>
+                <!--SPONSOR--> 
+            </div>
+            <!--FIN FOOTER-->
+        </div>
+        <!--FIN CONTENT-->
+    	<!--BAR RIGHT<div class="bar_right"></div>-->
+    </div>
+    <!--FIN BODY-->
+</body>
+</html>

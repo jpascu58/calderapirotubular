@@ -1,0 +1,830 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <!--CSS COMUN--><link rel="stylesheet" type="text/css" href="../core/css/comun.css" />
+        <!-- CSS --><link rel="Stylesheet" type="text/css" href="../core/css/jHtmlArea.css" />
+        <!-- CSS --><link rel="Stylesheet" type="text/css" href="../core/css/jHtmlArea.ColorPickerMenu.css" />
+		<!-- CSS --><link rel="stylesheet" type="text/css" href="../core/css/multimedia.css" />
+		<!--JS JQUERY--><script type="text/javascript" src="../core/js/jquery-1.7.2.min.js" language="javascript"></script>
+        <!-- JS --><script src="../core/js/jquery/plugins/jquery-ui-1.8.7.custom.min.js" type="text/javascript"></script>
+		
+		<!-- JS PLUG --><script type="text/javascript" language="javascript" src="../core/js/config.js"></script>
+        <!-- JS PLUG --><script type="text/javascript" language="javascript" src="../core/js/core.js"></script>
+        <!-- JS PLUG --><script type="text/javascript" language="javascript" src="../core/js/exercises.js"></script>
+		
+        <!-- JS --><script src="../core/js/jquery/plugins/jquery.dialogextend.js" type="text/javascript"></script>
+        <!-- JS --><script src="../core/js/jquery/plugins/jquery.window.min.js" type="text/javascript"></script>
+        <!-- JS --><script src="../core/js/jquery/plugins/jquery.quickview.js" type="text/javascript"></script>
+        <!-- JS --><script src="../core/js/jquery/plugins/jquery.highlight-3.js" type="text/javascript"></script>
+        <!-- JS --><script src="../core/js/jquery/plugins/jquery.cookie.js" type="text/javascript"></script>
+        <!-- JS --><script src="../core/js/jquery/plugins/jquery.print.js" type="text/javascript"></script>
+        <!-- JS --><script src="../core/js/jquery/plugins/jquery.treeview.js" type="text/javascript"></script>
+        <!-- JS --><script src="../core/js/jquery/plugins/jHtmlArea-0.7.0.min.js" type="text/javascript"></script>
+        <!-- JS --><script src="../core/js/jquery/plugins/jHtmlArea.ColorPickerMenu-0.7.0.min.js" type="text/javascript"></script>
+        <!-- JS --><script src="../core/js/jquery/plugins/jquery.tabify.js" type="text/javascript"></script>
+		<!-- JS --><script src="../core/js/jquery/plugins/jquery.mobile.custom.min.js" type="text/javascript"></script>
+        <!-- JS --><script src="../core/js/Swfobject.js" type="text/javascript"></script>
+        <!-- JS --><script src="../core/js/jquery.nicescroll.js" type="text/javascript"></script>
+		<!-- JS --><script src="../core/js/jquery.print.book.cartagena.js" type="text/javascript"></script>
+		<script type="text/javascript"> var pagina_html = ''; </script>
+		<!--JS COMUN--><script type="text/javascript" src="../core/js/comun.js" language="javascript"></script>
+		<script type="text/javascript" language="javascript">
+			jQuery(document).ready(function(){
+				$('.menu').hide();
+			});
+		</script>
+<title>Cartagena - 3.2.2 Control de caldera</title>
+</head>
+
+<body style="-moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;">
+<div class="tooltip"><div class="flechita"><div class="icono"></div></div><div class="content_tootltip"></div></div>
+<div id="contenedor_menu_herramientas" class="contenedor_menu_herramientas">
+	<div class="cabecera"></div>
+	<div class="contenido"></div>
+</div>
+
+	<!--BODY-->
+    <div class="body">
+		<!--COL IZQ-->
+		<div class="col_izq_unidad caso_practico" style="position: absolute; margin-left: 10px; display: hidden;">
+							<!--MENU-->
+			<div class="menu" style="left: -400px;">
+				<!--ITEM--><div onclick="IrA('page_1760.html')" class="item verde content_false "><div class="contenido"><div class="icono caso_practico"></div><div class="texto">3. SISTEMA DE CONTROL <op></op></div><div class="clear-fix"></div></div></div><!--ITEM--><div class="item content_true "><div class="contenido"><div class="icono_open" id="menu_1762"></div><div onclick="IrA('page_1762.html')" class="texto">3.1 Instalación SCADA</div><div class="clear-fix"></div></div></div><div  class="sub_menu" id="submenu_1762"><!--ITEM--><div onclick="IrA('page_1850.html')" class="item"><div class="contenido"><div class="texto">3.1.1 Instalación proyecto calderas pirotubulares</div><div class="clear-fix"></div></div></div><!--ITEM--><div onclick="IrA('page_1851.html')" class="item"><div class="contenido"><div class="texto">3.1.2 Ejecución sistema calderas</div><div class="clear-fix"></div></div></div></div><!--ITEM--><div class="item content_true  open"><div class="contenido"><div class="icono_open" id="menu_1763"></div><div onclick="IrA('page_1763.html')" class="texto">3.2 Interfaz del usuario</div><div class="clear-fix"></div></div></div><div style="display:block;" class="sub_menu" id="submenu_1763"><!--ITEM--><div onclick="IrA('page_1857.html')" class="item"><div class="contenido"><div class="texto">3.2.1 Control de combustión</div><div class="clear-fix"></div></div></div><!--ITEM--><div onclick="IrA('page_1859.html')" class="item active"><div class="contenido"><div class="texto">3.2.2 Control de caldera</div><div class="clear-fix"></div></div></div></div>
+			</div>
+			<!--FIN MENU-->
+			<div class="bar-line-1"></div>
+			<!--BOTON--><div class="boton"><img src="../core/imgs/sumario.png" /></div>
+		</div>
+		<!--FIN COL IZQ-->
+    	<!--BAR LEFT<div class="bar_left"></div>-->
+       <!--CONTENT-->
+        <div class="content caso_practico">
+	        <!--HEADER-->
+        	<div class="header">
+            	<div class="titulo">
+                	<!--<span class="titulo_principal">#TITLE_BOOK#</span>-->
+					<div class="titulo_principal">Manual de Operador de Calderas Pirotubulares</div>
+					<div class="titulo_principal2">M&Oacute;DULO DESCRIPTIVO</div>
+                </div>
+				<!--MENU SUPERIOR-->
+                <div class="menu_superior">
+                    <!--ITEM--><div width="90" titulo="Imprimir" class="item print"></div>
+                    <!--ITEM--><div width="150" titulo="Disminuir tipografía" class="item a_menos"></div>
+                    <!--ITEM--><div width="152" titulo="Aumentar tipografía" class="item a_mas"></div>
+                    <!--ITEM--><div width="255" titulo="Expandir/Contraer columna lateral" class="item colapse_menu"></div>
+                    <!--ITEM--><div width="25" titulo="PDI" class="item pdi"></div>
+                </div>
+                <!--FIN MENU SUPERIOR-->
+                
+                
+        	</div>
+        	<!--FIN HEADER-->
+			<!--CONTENT MIGAS MENU-->
+            <div class="content_migas_menu">
+                <!--CAMINO MIGAS-->
+                <div class="camino_migas">
+                    <div class="icono"></div>
+                    <!--TEXTO CAMINO-->
+                    <div class="texto">
+                        <span><a href="portada.html">&Iacute;ndice</a></span> / <span><a href="page_1760.html">3. SISTEMA DE CONTROL <op></op></a></span> / <span><a href="page_1763.html">3.2 Interfaz del usuario</a></span> / <span><a href="page_1859.html">3.2.2 Control de caldera</a></span>
+                    </div>
+                    <!--FIN TEXTO CAMINO-->
+                </div>
+                <!--FIN CAMINO MIGAS-->
+				<!--MENU SUPERIOR-->
+                <div class="menu_superior pdi-activo">
+                    <!--ITEM--><div width="25" titulo="PDI" class="item pdi"></div>
+                </div>
+                <!--FIN MENU SUPERIOR-->
+            </div>
+   			<!--FIN CONTENT MIGAS MENU-->
+			<div class="clear-fix"></div>
+			<!--BARRA AZUL--><div class="barra_azul"><div class="texto"><span class="titulo_principal">3.2.2 Control de caldera</span></div></div>
+			<div class="clear-fix"></div>
+           <!--CONTENT COL CENTRAL MENU DERECHO-->
+           <table class="content_col_central_menu_der">
+           		<tr>
+                   <!--COL CENTRAL-->
+                   <td class="col_central">
+                   <!--CONTENT COL CENTRAL-->
+                   <div class="content_col_central">
+ 						<span style="color: rgb(0, 51, 102);"><strong>BOMBAS DE ADITIVOS</strong></span>&nbsp;<br />
+<br />
+<div style="text-align: center;">
+	&nbsp;</div>
+<div>
+	Existir&aacute;n dos grupos de bombas de aditivos diferenciadas:</div>
+<ol style="margin-left: 40px;">
+	<li>
+		<strong>Bombas de Secuestrante de Ox&iacute;geno.</strong></li>
+	<li>
+		<strong>Bombas de Alcalinizante.</strong></li>
+</ol>
+<div style="text-align: center;">
+	<br />
+	<img alt="" src="data/files/5736.png" style="width: 680px; height: 359px;" /><br />
+	<br />
+	<span style="font-weight: bold; line-height: 12px;">Figura 67. Bombas de aditivos</span><strong>.</strong></div>
+<br />
+<br />
+En la pantalla aparecer&aacute;n varios elementos de cada uno de los grupos:<br />
+<ul class="lista_desordenada">
+	<li>
+		Bombas de funcionamiento.
+		<ul style="margin-left: 40px;">
+			<li>
+				Verde indica que la bomba est&aacute; arrancada.</li>
+			<li>
+				Blanco indica que puede funcionar pero no est&aacute; queriendo utilizarse.</li>
+			<li>
+				Gris indica que la bomba est&aacute; parada.</li>
+			<li>
+				Rojo indica que la bomba est&aacute; en fallo.</li>
+		</ul>
+	</li>
+	<li>
+		Tanque de elemento.</li>
+	<li>
+		Apertura de cada una de las bombas.</li>
+	<li>
+		Capacidad real del tanque con su capacidad en litros (M&aacute;ximo 400 litros).</li>
+	<li>
+		Litros salida de aditivos hacia tanque de agua (m&aacute;ximo de caudal de salida 2 l/h).</li>
+	<li>
+		Bot&oacute;n de reset para quitar el enclavamiento de las bombas.</li>
+	<li>
+		Se&ntilde;al de enclavamiento de bombas que se habilita cuando no hay material o est&aacute; con cantidades por debajo del nivel de seguridad establecido en el tanque de almacenamiento de los aditivos.</li>
+</ul>
+Ambos grupos de bombas pueden funcionar de forma independiente y de dos modos diferentes. Dichos modos de funcionamiento son los siguientes:<br />
+<ul style="margin-left: 200px;">
+	<li>
+		<strong>Autom&aacute;tico.</strong></li>
+	<li>
+		<strong>Manual.</strong></li>
+</ul>
+<br />
+<span style="color: rgb(255, 140, 0);"><strong>AUTOM&Aacute;TICO:</strong></span><br />
+<br />
+Cuando las bombas funcionan en modo autom&aacute;tico el control del estado depende de la v&aacute;lvula de llenado de agua (LV01).<br />
+<br />
+Es decir, el caudal del grupo de bombas depender&aacute; del caudal enviado por la v&aacute;lvula de control (en este caso LV01). Un ejemplo de ello es que cuando la v&aacute;lvula de control LV01 marque una apertura del 100%, el grupo de bombas funcionar&aacute; con una apertura del 100.<br />
+<br />
+Este porcentaje queda sujeto a su vez por el enclavamiento de la capacidad del tanque de cada uno de los grupos. Es decir, por debajo de un m&iacute;nimo de seguridad en los tanques, el grupo de bombas deber&aacute; pararse.<br />
+<br />
+En ese momento aparece la se&ntilde;al de enclavamiento mediante un s&iacute;mbolo&nbsp;<strong>E</strong>. al lado de este s&iacute;mbolo nos aparecer&aacute; un bot&oacute;n de<em>&nbsp;reset</em>&nbsp;del enclavamiento para poder quitar el mismo y que las bombas puedan volver a empezar.<br />
+<br />
+Las bombas se podr&aacute;n poner en funcionamiento y parar de forma manual desde el PLC y su funcionamiento podr&aacute; ser modificado desde el sistema de control.<br />
+<br />
+<span style="color: rgb(255, 140, 0);"><strong>MANUAL</strong></span><br />
+<br />
+Ser&aacute; el operador el que se encargue del funcionamiento deseado de las bombas. Para ello deber&aacute; operar desde la pantalla propia del grupo de bombas.<br />
+<br />
+<br />
+<span style="color: rgb(0, 51, 102);"><strong>PANTALLA DETALLE DE BOMBAS</strong></span><br />
+<br />
+Existen dos pantallas diferenciadas, una para el grupo de desoxigenante y otra para el alcalinizante.<br />
+<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5737.png" style="width: 512px; height: 407px;" /><br />
+	<br />
+	<span style="font-weight: bold; line-height: 12px;">Figura 68. Bombas de desoxigenante</span><strong>.</strong><br />
+	&nbsp;</div>
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5738.png" style="width: 513px; height: 410px;" /><br />
+	<br />
+	<span style="font-weight: bold; line-height: 12px;">Figura 69. Bombas de alcalinizante</span><strong>.</strong></div>
+<br />
+<br />
+Esta pantalla ser&aacute; abierta siempre que el operador pulse sobre cada una de las bombas. En ese momento le aparecer&aacute; la pantalla en cuesti&oacute;n, con los siguientes elementos:
+<ul class="lista_desordenada">
+	<li>
+		Sin&oacute;ptico de las bombas mostrando el nombre y con indicador de estado:
+		<ul style="margin-left: 40px;">
+			<li>
+				Verde&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;Arrancada.</li>
+			<li>
+				Rojo&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;Parada.</li>
+		</ul>
+	</li>
+	<li>
+		Selector de Bomba que indicar&aacute; cu&aacute;l es la bomba activa en cada momento. Tambi&eacute;n este estado es reflejado en el sin&oacute;ptico mediante un led verde. este led indicar&aacute; si est&aacute; seleccionado en el conmutador.Tendr&aacute; tres posiciones:
+		<ul style="margin-left: 40px;">
+			<li>
+				Izda&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;Una bomba como bomba normal de funcionamiento.</li>
+			<li>
+				Dual&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;Dos bombas a la vez.</li>
+			<li>
+				Dcha&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;La otra bomba como bomba normal de funcionamiento.</li>
+		</ul>
+	</li>
+	<li>
+		Selector de Auto/ Manual del grupo de bombas.</li>
+	<li>
+		Bot&oacute;n de encendido/apagado de bombas. Se ha incorporado un bot&oacute;n con el sin&oacute;ptico <em>ON/OF</em>&nbsp;para poder proceder a la apertura de la v&aacute;lvula. Cuando se encuentre parada el mensaje de &quot;OFF&quot; parpadear&aacute; en rojo y cuando se encuentra arrancada el mensaje &quot;ON&quot; parpadear&aacute; en verde. Siempre que se intente realizar un cambio de estado, el sistema avisar&aacute; al operador de la circunstancia para evitar errores.</li>
+</ul>
+El operador podr&aacute; manejar cada grupo de bombas por separado.<br />
+<br />
+<br />
+<span style="color: rgb(0, 51, 102);"><strong>PURGAS DE LODOS</strong></span><br />
+<br />
+El generador dispone de una&nbsp;<em>v&aacute;lvula de purga lodo autom&aacute;tica en el cuerpo de caldera</em>. Para proceder a la apertura del control de la v&aacute;lvula deber&aacute; pulsarse sobre el icono de la v&aacute;lvula en cuesti&oacute;n.<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5723.jpg" style="width: 680px; height: 542px;" /><br />
+	<br />
+	<span style="font-weight: bold; line-height: 12px;">Figura 70. Purgas de lodos.</span></div>
+<br />
+<br />
+El estado de la v&aacute;lvula se visualizar&aacute; de la siguiente manera:
+<ul style="margin-left: 80px;">
+	<li>
+		Rojo&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;V&aacute;lvula cerrada.</li>
+	<li>
+		Verde&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;V&aacute;lvula abierta.</li>
+</ul>
+Al abrir la pantalla se puede operar sobre los siguientes elementos de la v&aacute;lvula:
+<ul class="lista_desordenada">
+	<li>
+		<strong>Estado de la v&aacute;lvula</strong>&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;Abierta / Cerrada. Se podr&aacute; cambiar pulsando sobre el icono de la v&aacute;lvula y le aparecer&aacute; al operador un mensaje indic&aacute;ndole la operaci&oacute;n a realizar. El cambio de estado se realizar&aacute; sobre el contrario al que estuviera pulsado en ese momento. Es decir, si la v&aacute;lvula se encuentra abierta, entonces se cambiar&aacute; a cerrado y viceversa.&nbsp;Se ha incorporado un bot&oacute;n con el sin&oacute;ptico&nbsp;<em>ON/OF</em>&nbsp;para poder proceder a la apertura de la v&aacute;lvula. Cuando se encuentre parada el mensaje de &quot;OFF&quot; parpadear&aacute; en rojo y cuando se encuentra arrancada el mensaje &quot;ON&quot; parpadear&aacute; en verde.&nbsp;Siempre que se intente realizar un cambio de estado, el sistema avisar&aacute; al operador de la circunstancia para evitar errores.</li>
+	<li>
+		<strong>Modo funcionamiento de la v&aacute;lvula</strong>&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;Auto / Manual. Para cambiar de estado se utilizar&aacute; el selector y se cambiar&aacute; hacia el que se desee utilizar. El estado de &ldquo;Auto&rdquo; se mostrar&aacute; en color verde y el estado &ldquo;Manual&rdquo; se mostrar&aacute; en rojo.</li>
+</ul>
+<br />
+Esta pantalla NO se abrir&aacute; en formato Modal pudiendo el operador interactuar sobre otros elementos de la caldera.<br />
+<br />
+Para comprobar la conductividad del agua ha de abrirse la pantalla de permisivos donde mostraremos los par&aacute;metros asociados al sistema.<br />
+<br />
+<span style="color: rgb(255, 140, 0);"><strong>SEGURIDADES</strong></span>
+<ul class="lista_desordenada">
+	<li>
+		El nivel de seguridad&nbsp;<strong>L</strong>&nbsp;de agua en caldera se ha establecido en 9 m<sup>3</sup>.</li>
+	<li>
+		El nivel de seguridad&nbsp;<strong>LL</strong>&nbsp;de agua en caldera se ha establecido en 5 m<sup>3</sup>.</li>
+	<li>
+		El nivel de seguridad&nbsp;<strong>H</strong>&nbsp;de agua en caldera se ha establecido en 36 m<sup>3</sup>.</li>
+	<li>
+		El nivel de seguridad&nbsp;<strong>HH</strong>&nbsp;de agua en caldera se ha establecido en 43 m<sup>3</sup>.<br />
+		&nbsp;</li>
+</ul>
+<span style="color: rgb(0, 51, 102);"><strong>DISPOSITIVOS DE PURGAS DE SALES</strong></span><br />
+<br />
+Para la eliminaci&oacute;n de las sales en suspensi&oacute;n en el agua del generador de vapor, &eacute;ste va provisto de una tubuladura de purgas de sales en la superficie del nivel de agua.<br />
+<br />
+La v&aacute;lvula de purgas de sales autom&aacute;tica (XV015), para el control de salinizaci&oacute;n del agua de caldera instalado en el cuadro de control, modifica la conductividad. Para proceder a abrir el control de la v&aacute;lvula deber&aacute; pulsarse sobre el icono de la v&aacute;lvula en cuesti&oacute;n.<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5724.png" style="width: 680px; height: 382px;" /><br />
+	<br />
+	<span style="font-weight: bold; line-height: 12px;">Figura 71. Purgas de sales.</span></div>
+<br />
+<br />
+El estado de la v&aacute;lvula se visualizar&aacute; de la siguiente manera:
+<ul style="margin-left: 40px;">
+	<li>
+		Rojo&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;V&aacute;lvula cerrada.</li>
+	<li>
+		Verde&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;V&aacute;lvula abierta.</li>
+</ul>
+Al abrir la pantalla podr&aacute; operarse sobre los siguientes elementos de la v&aacute;lvula:<br />
+<ul class="lista_desordenada">
+	<li>
+		<strong>Estado de la v&aacute;lvula</strong>&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;Abierta / Cerrada. &nbsp;Se podr&aacute; cambiar pulsando sobre el icono de la v&aacute;lvula y aparecer&aacute; ante el operador un mensaje indicando la operaci&oacute;n a realizar. El cambio de estado se realizar&aacute; sobre el contrario al que estuviera pulsado en ese momento. Es decir, si la v&aacute;lvula se encuentra abierta, se cambiar&aacute; a cerrado y viceversa.&nbsp;Se ha incorporado un bot&oacute;n con el sin&oacute;ptico&nbsp;<em>ON/OF</em>&nbsp;para poder proceder a la apertura de la v&aacute;lvula. Cuando se encuentre parada el mensaje de &quot;OFF&quot; parpadear&aacute; en rojo y cuando se encuentra arrancada el mensaje &quot;ON&quot; parpadear&aacute; en verde.&nbsp;Siempre que se intente realizar un cambio de estado, el sistema avisar&aacute; al operador de la circunstancia para evitar errores.</li>
+	<li>
+		<strong>Modo funcionamiento de la v&aacute;lvula</strong>&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;Auto / Manual. Para cambiar de estado se utilizar&aacute; el selector y se cambiar&aacute; hacia el que se desee utilizar.&nbsp;El estado de &ldquo;Auto&rdquo; se mostrar&aacute; en color verde y el estado &ldquo;Manual&rdquo; se mostrar&aacute; en rojo.</li>
+</ul>
+<br />
+Esta pantalla NO se abrir&aacute; en formato Modal pudiendo el operador interactuar sobre otros elementos de la caldera.<br />
+<br />
+<br />
+<span style="color: rgb(0, 51, 102);"><strong>CONTROL DE NIVEL DEL DEPOSITO DE ALIMENTACI&Oacute;N</strong></span><br />
+<br />
+El control de nivel del dep&oacute;sito de agua se encargar&aacute; de mantener el nivel de agua determinado en el <em>SetPoint</em> del lazo de control.<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5415.png" style="width: 680px; height: 382px;" /><br />
+	<br />
+	<strong><span style="font-weight: bold; line-height: 12px;">Figura 72.&nbsp;</span>Control de nivel del dep&oacute;sito de alimentaci&oacute;n<span style="font-weight: bold; line-height: 12px;">.</span></strong></div>
+<br />
+<br />
+Este lazo de control est&aacute; realizado por una v&aacute;lvula motorizada (LV01). Para determinar la apertura de la v&aacute;lvula utilizaremos un medidor de nivel situado en el lado derecho del dep&oacute;sito.<br />
+<br />
+Este medidor de nivel marcar&aacute; el nivel del dep&oacute;sito de agua en %. La capacidad m&aacute;xima del dep&oacute;sito de alimentaci&oacute;n de agua a la caldera ser&aacute; de 40m<sup>3</sup>.<br />
+<br />
+Para acceder a la pantalla de control de nivel deber&aacute; pulsarse sobre el bot&oacute;n situado en la parte superior derecha de la v&aacute;lvula LV01.<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5416.png" style="width: 484px; height: 128px;" /><br />
+	<br />
+	<strong><span style="line-height: 12px;">Figura 73. Bot&oacute;n de acceso a la pantalla de c</span>ontrol de nivel<span style="line-height: 12px;">.</span></strong></div>
+<br />
+<br />
+En la parte izquierda de la v&aacute;lvula de control se mostrar&aacute; el caudal que est&aacute; saliendo en ese instante hacia el dep&oacute;sito de alimentaci&oacute;n de la caldera. En la parte inferior se mostrar&aacute; el tanto por ciento de apertura de la v&aacute;lvula del control de flujo. Asimismo, en la parte superior mostraremos el estado en el que se encuentra la v&aacute;lvula (AUTO / MANUAL).<br />
+<br />
+Al pulsar sobre el bot&oacute;n del lazo nos aparecer&aacute; la pantalla correspondiente:<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5417.png" style="width: 680px; height: 244px;" /><br />
+	<br />
+	<strong><span style="line-height: 12px;">Figura 74. Pantalla del lazo de c</span>ontrol<span style="line-height: 12px;">.</span></strong></div>
+<br />
+La pantalla del lazo contendr&aacute; los siguientes elementos:&nbsp;
+<ul class="lista_desordenada">
+	<li>
+		<strong>Bot&oacute;n de AUTO / MANUAL</strong>&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;Situado en la parte superior izquierda nos posibilitar&aacute; cambiar el estado del lazo de control. El lazo en autom&aacute;tico no podr&aacute; ser operado por el usuario sino simplemente nos dejar&aacute; la posibilidad de manejar la consigna. En manual nos dejar&aacute; operar para poder cambiar la apertura de la v&aacute;lvula independientemente de la consigna.&nbsp;</li>
+	<li>
+		<strong>Sin&oacute;ptico del Tanque</strong>&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;En esta parte de la pantalla mostraremos un sin&oacute;ptico del tanque con los siguientes elementos:</li>
+	<li>
+		Indicador de nivel que ir&aacute; subiendo con respecto al llenado del tanque. Se mostrar&aacute; la cantidad de metros c&uacute;bicos que se encuentran en el tanque.
+		<ul style="margin-left: 40px;">
+			<li>
+				Cuadrado rojo que indica cuando el nivel del tanque se encuentra situado dentro del tanto por ciento establecido. Una vez que el nivel se encuentre dentro del tanto por ciento establecido, el cuadro cambiar&aacute; a color verde.</li>
+			<li>
+				Situado en la parte inferior encontramos el medidor del caudal de impulsi&oacute;n de las bombas hacia caldera.</li>
+			<li>
+				Situado en la parte superior encontramos el medidor del caudal de entrada de agua hacia el tanque de alimentaci&oacute;n.</li>
+		</ul>
+	</li>
+	<li>
+		En la parte central de la pantalla encontramos los par&aacute;metros de&nbsp;<strong>regulaci&oacute;n del lazo</strong>:
+		<ul style="margin-left: 40px;">
+			<li>
+				Consigna.</li>
+			<li>
+				Banda Proporcional.</li>
+			<li>
+				Reset.</li>
+		</ul>
+	</li>
+	<li>
+		En la parte de la derecha encontramos las tendencias de los&nbsp;<strong>valores</strong>&nbsp;que influyen en el lazo de control y sus valores. Los valores de esta &aacute;rea son solamente de visualizaci&oacute;n.</li>
+</ul>
+<br />
+Para cerrar la pantalla simplemente deberemos de pulsar el bot&oacute;n &ldquo;X&rdquo; situado en el men&uacute; de la misma.<br />
+<br />
+<br />
+<span style="color: rgb(0, 51, 102);"><strong>PURGA DEL DEP&Oacute;SITO DE AGUA&nbsp;</strong></span><br />
+<br />
+La pantalla de la v&aacute;lvula de purgas, situada bajo el tanque de alimentaci&oacute;n, se accede pulsando la v&aacute;lvula con el mismo nombre. Para proceder a abrir el control de la v&aacute;lvula deberemos pulsar sobre el icono de la v&aacute;lvula en cuesti&oacute;n.<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5725.jpg" style="width: 680px; height: 544px;" /><br />
+	<br />
+	<strong><span style="line-height: 12px;">Figura 75. Purga del dep&oacute;sito de agua.</span></strong></div>
+<br />
+<br />
+El estado de la v&aacute;lvula se visualizar&aacute; de la siguiente manera:
+<ul style="margin-left: 40px;">
+	<li>
+		Rojo&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;V&aacute;lvula cerrada.</li>
+	<li>
+		Verde&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;V&aacute;lvula abierta. En ese momento la tuber&iacute;a se volver&aacute; de color azul, simulando el paso del agua por la misma. Tambi&eacute;n nos aparecer&aacute; en la pantalla el caudal de salida por esa v&aacute;lvula en color verde y parpadeando.</li>
+</ul>
+<br />
+Al abrir la pantalla podremos operar sobre los siguientes elementos de la v&aacute;lvula:
+<ul class="lista_desordenada">
+	<li>
+		<strong>Estado de la v&aacute;lvula</strong>&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;Abierta / Cerrada. Se podr&aacute; cambiar pulsando sobre el icono de la v&aacute;lvula y le aparecer&aacute; al operador un mensaje indic&aacute;ndole la operaci&oacute;n a realizar.&nbsp;El cambio de estado se realizar&aacute; sobre el contrario al que estuviera pulsado en ese momento. Es decir, si la v&aacute;lvula se encuentra abierta, entonces cambiaremos a cerrado y viceversa.&nbsp;Se ha incorporado un bot&oacute;n con el sin&oacute;ptico&nbsp;<em>ON/OF</em>&nbsp;para poder proceder a la apertura de la v&aacute;lvula. Cuando se encuentre parada el mensaje de &quot;OFF&quot; parpadear&aacute; en rojo y cuando se encuentra arrancada el mensaje &quot;ON&quot; parpadear&aacute; en verde.&nbsp;Siempre que se intente realizar un cambio de estado, el sistema avisar&aacute; al operador de la circunstancia para evitar errores.</li>
+	<li>
+		<strong>Modo funcionamiento de la v&aacute;lvula</strong>&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;Auto / Manual. Para cambiar de estado utilizaremos el selector y cambiaremos hacia el que deseemos utilizar. El estado de &ldquo;Auto&rdquo; se mostrar&aacute; en color verde y el estado &ldquo;Manual&rdquo; se mostrar&aacute; en rojo.</li>
+</ul>
+<br />
+Esta pantalla NO se abrir&aacute; en formato Modal pudiendo el operador interactuar sobre otros elementos de la caldera.<br />
+<br />
+<br />
+<span style="color: rgb(0, 51, 102);"><strong>BOMBAS DEL DEPOSITO DE AGUA&nbsp;</strong></span><br />
+<br />
+Esta pantalla ser&aacute; abierta siempre que el operador pulse sobre cada una de las bombas. En ese momento aparecer&aacute; la pantalla en cuesti&oacute;n.<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5739.png" style="width: 387px; height: 356px;" /><br />
+	<br />
+	<strong><span style="line-height: 12px;">Figura 76. Bombas del dep&oacute;sito de agua.</span></strong><br />
+	&nbsp;</div>
+<br />
+<br />
+En esta pantalla aparecer&aacute;n los siguientes elementos:&nbsp;
+<ul class="lista_desordenada">
+	<li>
+		Sin&oacute;ptico de las bombas mostrando el nombre y con indicador de estado:
+		<ul>
+			<li>
+				Verde&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>Arrancada.</li>
+			<li>
+				Rojo&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;Parada.&nbsp;</li>
+		</ul>
+	</li>
+	<li>
+		Selector de Auto/ Manual de la bomba.</li>
+</ul>
+Siempre que alguna de las bombas est&eacute; arrancada se mostrar&aacute; con un color verde sobre la pantalla quedando la tuber&iacute;a correspondiente &nbsp;animada con color azul simulando el caudal que est&aacute; pasando sobre la misma.<br />
+<br />
+Las bombas parar&aacute;n de forma autom&aacute;tica en caso de bajo nivel del tanque de alimentaci&oacute;n. En ese momento aparecer&aacute; en pantalla un bot&oacute;n el s&iacute;mbolo &ldquo;R&rdquo; indicando el Reset y otro con el s&iacute;mbolo &ldquo;E&rdquo; indicando el enclavamiento.<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5420.png" style="width: 81px; height: 41px;" /><br />
+	<br />
+	<strong><span style="line-height: 12px;">Figura 77. Botones Reset (R) y Enclavamiento (E).</span></strong></div>
+<br />
+<br />
+Para habilitar de nuevo la bomba deberemos de pulsar el bot&oacute;n de &ldquo;Reset&rdquo;. En el caso de encontrarse otra vez por debajo del nivel de agua, el sistema volver&aacute; a enclavarse.<br />
+<br />
+<br />
+<span style="color: rgb(0, 51, 102);"><strong>CONTROL DE TEMPERATURA DEL DESGASIFICADOR&nbsp;</strong></span><br />
+<br />
+El control de nivel de temperatura se encargar&aacute; de mantener la temperatura del agua en el tanque de alimentaci&oacute;n. Vendr&aacute; determinado en el SetPoint del lazo de control.<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5726.jpg" style="width: 680px; height: 544px;" /><br />
+	<br />
+	<strong><span style="line-height: 12px;">Figura 78. Control de temperatura del desgasificador.</span></strong></div>
+<br />
+<br />
+Este lazo de control est&aacute; realizado por una v&aacute;lvula motorizada (TV04). Para determinar la apertura de la v&aacute;lvula utilizaremos un medidor de temperatura situado en el lado derecho del dep&oacute;sito.<br />
+<br />
+Para acceder a la pantalla de control de nivel deber&aacute; pulsarse sobre el bot&oacute;n situado en la parte superior izquierda de la v&aacute;lvula TV04.<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5422.png" style="width: 330px; height: 183px;" /><br />
+	<br />
+	<strong><span style="line-height: 12px;">Figura 79. Acceso a la pantalla de control de nivel.</span></strong></div>
+<br />
+En la parte inferior se mostrar&aacute; el tanto por ciento de apertura de la v&aacute;lvula del control de flujo. Asimismo, en la parte superior se muestra el estado en el que se encuentra la v&aacute;lvula (AUTO / MANUAL).<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5727.jpg" style="width: 680px; height: 544px;" /><br />
+	<br />
+	<strong><span style="line-height: 12px;">Figura 80. Pantalla de control de temperatura.</span></strong></div>
+<br />
+<br />
+La pantalla del lazo contendr&aacute; los siguientes elementos:
+<ul class="lista_desordenada">
+	<li>
+		<strong>Bot&oacute;n de AUTO / MANUAL</strong>&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;Situado en la parte superior posibilitar&aacute; cambiar el estado del lazo de control. El lazo en autom&aacute;tico no podr&aacute; ser operado por el usuario sino que simplemente permite la posibilidad de manejar la consigna. En manual permite operar para poder cambiar la apertura de la v&aacute;lvula independientemente de la consigna.</li>
+	<li>
+		<strong>Term&oacute;metro</strong>&nbsp;indicando la temperatura del tanque. En la parte central de la pantalla encontramos los par&aacute;metros de regulaci&oacute;n del lazo:
+		<ul style="margin-left: 40px;">
+			<li>
+				Consigna.</li>
+			<li>
+				Banda Proporcional.</li>
+			<li>
+				Reset.</li>
+		</ul>
+	</li>
+	<li>
+		En la parte de la derecha se encuentran las tendencias de los valores que influyen en el lazo de control y sus valores. Los valores de esta &aacute;rea son solamente de visualizaci&oacute;n.</li>
+</ul>
+<br />
+Para cerrar la pantalla simplemente debe pulsarse el bot&oacute;n &ldquo;X&rdquo; situado en el men&uacute; de la misma.<br />
+<br />
+<br />
+<span style="color: rgb(0, 51, 102);"><strong>CONTROL DE NIVEL DE LA CALDERA</strong></span><br />
+<br />
+El control de nivel de la caldera se encargar&aacute; de mantener el nivel de agua determinado en el <em>SetPoint </em>del lazo de control.<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5728.jpg" style="height: 544px; width: 680px;" /><br />
+	<br />
+	<strong><span style="line-height: 12px;">Figura 81. Control de nivel de la caldera.</span></strong></div>
+<br />
+<br />
+Este lazo de control est&aacute; realizado por una v&aacute;lvula motorizada (LV02). Para determinar la apertura de la v&aacute;lvula se utilizar&aacute; un medidor de nivel situado en el lado derecho de la misma. Este medidor de nivel marcar&aacute; el nivel de la caldera. La capacidad m&aacute;xima del dep&oacute;sito de alimentaci&oacute;n de agua a la caldera ser&aacute; de 50m<sup>3</sup>.<br />
+<br />
+Para acceder a la pantalla de control de nivel deberemos pulsar sobre el bot&oacute;n situado en la parte superior derecha de la v&aacute;lvula LV02.<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5425.png" style="width: 220px; height: 130px;" /><br />
+	<br />
+	<strong><span style="line-height: 12px;">Figura 82. Acceso a la pantalla de control del nivel de la caldera.</span></strong><br />
+	<br />
+	&nbsp;</div>
+<div style="text-align: center;">
+	<img alt="" src="data/files/5588.png" style="width: 680px; height: 456px;" /><br />
+	<br />
+	&nbsp;</div>
+<div style="text-align: center;">
+	<img alt="" src="data/files/5589.png" style="width: 680px; height: 453px;" /><br />
+	<br />
+	<strong><span style="line-height: 12px;">Figura 83. Pantallas de lazo de control del nivel de la caldera.</span></strong></div>
+<br />
+La pantalla del lazo contendr&aacute; los siguientes elementos:&nbsp;
+<ul class="lista_desordenada">
+	<li>
+		<strong>Bot&oacute;n de AUTO / MANUAL</strong>&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;Situado en la parte superior izquierda permite cambiar el estado del lazo de control. El lazo en autom&aacute;tico no podr&aacute; ser operado por el usuario sino que simplemente se podr&aacute; manejar la consigna. En manual permitir&aacute; operar para poder cambiar la apertura de la v&aacute;lvula independientemente de la consigna.</li>
+	<li>
+		<strong>Sin&oacute;ptico de la caldera&nbsp;</strong><span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;En esta parte de la pantalla se muestra un sin&oacute;ptico del tanque con los siguientes elementos:
+		<ul style="margin-left: 40px;">
+			<li>
+				Indicador de nivel que ir&aacute; subiendo con respecto al llenado de la caldera. Se mostrar&aacute; la cantidad de metros c&uacute;bicos que se encuentran en ella.</li>
+			<li>
+				Cuadrado rojo que indica cuando el nivel del agua en la caldera se encuentra situado dentro del tanto por ciento establecido. Una vez que el nivel se encuentre dentro del tanto por ciento establecido, el cuadro cambiar&aacute; a color verde. Esto es para indicar al alumno que los caudales se est&aacute;n aproximando al punto de consigna.</li>
+			<li>
+				Situado en la parte superior aparece el medidor del caudal de entrada de agua hacia caldera.</li>
+		</ul>
+	</li>
+	<li>
+		En la parte central de la pantalla se encuentran los&nbsp;<strong>par&aacute;metros de regulaci&oacute;n del lazo</strong>:
+		<ul style="margin-left: 40px;">
+			<li>
+				Consigna.</li>
+			<li>
+				Banda Proporcional.&nbsp;</li>
+			<li>
+				Reset.</li>
+		</ul>
+	</li>
+	<li>
+		En la parte de la derecha encontramos las tendencias de los&nbsp;<strong>valores</strong>&nbsp;que influyen en el lazo de control y sus valores. Los valores de esta &aacute;rea son solamente de visualizaci&oacute;n.</li>
+</ul>
+<br />
+Para cerrar la pantalla simplemente deberemos de pulsar el bot&oacute;n &ldquo;X&rdquo; situado en el men&uacute; de la misma.<br />
+<br />
+<br />
+<strong><span style="color: rgb(0, 51, 102);">V&Aacute;LVULA DE CONTROL DEL SILENCIADOR&nbsp;</span></strong><br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5729.jpg" style="width: 680px; height: 544px;" /><br />
+	<br />
+	<strong><span style="line-height: 12px;">Figura 84. V&aacute;lvula de control del silenciador.</span></strong></div>
+<br />
+<br />
+Para acceder a la pantalla de control de vapor deberemos pulsar sobre el bot&oacute;n situado en la parte izquierda de la v&aacute;lvula FV17.<br />
+<br />
+Aparecer&aacute; una pantalla para el manejo del lazo de control.<br />
+<br />
+NO ser&aacute; posible acceder a esta pantalla mientras la caldera est&eacute; siendo operada en MODO MANTENIMIENTO. Si fuera operada aparecer&aacute; un mensaje indicando tal circunstancia.<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5590.png" style="width: 357px; height: 141px;" /><br />
+	<br />
+	<strong><span style="line-height: 12px;">Figura 85. Aviso al usuario de que se encuentra en modo mantenimiento.</span></strong></div>
+<br />
+<br />
+Una vez habilitado el acceso a la pantalla, se muestra de la siguiente forma:<br />
+<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5730.jpg" style="height: 544px; width: 680px;" /><br />
+	<br />
+	<strong><span style="line-height: 12px;">Figura 86. Pantalla de control de vapor.</span></strong></div>
+<br />
+<br />
+La pantalla del lazo contendr&aacute; los siguientes elementos:
+<ul class="lista_desordenada">
+	<li>
+		<strong>Bot&oacute;n de AUTO / MANUAL</strong>&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;Situado en la parte superior izquierda permite cambiar el estado del lazo de control. El lazo en autom&aacute;tico no podr&aacute; ser operado por el usuario, simplemente, &nbsp;podr&aacute; manejar la consigna. En manual permite operar para poder cambiar la apertura de la v&aacute;lvula independientemente de la consigna.</li>
+	<li>
+		Consigna del lazo para la generaci&oacute;n de vapor.</li>
+	<li>
+		Sin&oacute;ptico de una v&aacute;lvula para la visualizaci&oacute;n del caudal de vapor lanzado.</li>
+	<li>
+		En la parte de la derecha encontramos las tendencias de los valores que influyen en el lazo de control y sus valores. Los valores de esta &aacute;rea son solamente de visualizaci&oacute;n.</li>
+</ul>
+Para cerrar la pantalla simplemente deberemos de pulsar el bot&oacute;n &ldquo;X&rdquo; situado en el men&uacute; de la misma.<br />
+<br />
+<br />
+<span style="color: rgb(0, 51, 102);"><strong>VALVULA DE ENTRADA AL SOBRECALENTADOR&nbsp;</strong></span><br />
+<br />
+Es la v&aacute;lvula denominada XV16.<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5785.jpg" style="width: 680px; height: 544px;" /><br />
+	<br />
+	<strong><span style="line-height: 12px;">Figura 87. V&aacute;lvula de entrada al sobrecalentador.</span></strong></div>
+<br />
+<br />
+NO podr&aacute; accederse a esta pantalla mientras la caldera est&eacute; siendo operada en MODO MANTENIMIENTO. Si fuera operada aparecer&aacute; un mensaje indicando tal circunstancia.<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5591.png" style="width: 463px; height: 158px;" /><br />
+	<br />
+	<strong><span style="line-height: 12px;">Figura 88. Aviso al usuario de que se encuentra en modo mantenimiento.</span></strong><br />
+	&nbsp;</div>
+<br />
+Una vez abierta nos mostrar&aacute; la pantalla de acceso a la v&aacute;lvula.<br />
+<br />
+En el caso de poder operar con la pantalla y no encontrarse a los 100 grados de temperatura, la v&aacute;lvula NO podr&aacute; ser operada informando al usuario de dicha circunstancia.<br />
+<br />
+Operando esta v&aacute;lvula, se act&uacute;a &nbsp;sobre las v&aacute;lvulas de generaci&oacute;n de vapor (FV17 y FV19) ya que son v&aacute;lvulas de funcionamiento opuesto:
+<ul style="margin-left: 40px;">
+	<li>
+		Si la v&aacute;lvula XV16 est&aacute; abierta entonces todo el vapor se ir&aacute; hacia el &aacute;rea de vapor sobrecalentado. Entonces se abrir&aacute; la v&aacute;lvula FV19 y cerrar&aacute; la v&aacute;lvula FV17.</li>
+</ul>
+<br />
+El estado de la v&aacute;lvula se visualizar&aacute; de la siguiente manera:<br />
+<br />
+<ul class="lista_desordenada">
+	<li>
+		Rojo&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;V&aacute;lvula cerrada.</li>
+	<li>
+		Verde&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;V&aacute;lvula abierta.</li>
+	<li>
+		<strong>Bot&oacute;n de AUTO / MANUAL</strong>&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;Situado en la parte superior izquierda nos posibilitar&aacute; cambiar el estado del lazo de control.</li>
+</ul>
+<div style="text-align: center;">
+	<img alt="" src="data/files/5433.png" style="width: 623px; height: 273px;" /><br />
+	<br />
+	<strong><span style="line-height: 12px;">Figura 89. Estado de la v&aacute;lvula XV016.</span></strong></div>
+<br />
+<br />
+Para cerrar la pantalla simplemente se debe pulsar el bot&oacute;n &ldquo;X&rdquo; situado en el men&uacute; de la misma. Si se decide abrir la v&aacute;lvula todo el vapor se ir&aacute; hacia vapor sobrecalentado. Simulando esta circunstancia se cambian de color las tuber&iacute;as.<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5434.png" style="height: 382px; width: 680px;" /><br />
+	<br />
+	<strong><span style="line-height: 12px;">Figura 90. Pantalla v&aacute;lvula XV016.</span></strong></div>
+<br />
+<br />
+<span style="color: rgb(0, 51, 102);"><strong>V&Aacute;LVULA DE CONTROL DEL COLECTOR DE VAPOR&nbsp;</strong></span><br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5731.jpg" style="width: 680px; height: 544px;" /><br />
+	<br />
+	<strong><span style="line-height: 12px;">Figura 91. V&aacute;lvula de control del colector de vapor.</span></strong><br />
+	&nbsp;</div>
+<br />
+Para acceder a la pantalla de control de vapor deber&aacute; pulsarse sobre el bot&oacute;n situado en la parte inferior del icono de la v&aacute;lvula FV19.<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5740.png" style="width: 200px; height: 160px;" /><br />
+	<br />
+	<strong><span style="line-height: 12px;">Figura 92. Acceso a la pantalla de control de la v&aacute;lvula.</span></strong></div>
+<br />
+Si se intenta acceder a la pantalla por debajo de unos par&aacute;metros de seguridad aparecer&aacute; un mensaje en pantalla indic&aacute;ndonos tal circunstancia.<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5592.png" style="width: 420px; height: 141px;" /><br />
+	<br />
+	<strong><span style="line-height: 12px;">Figura 93. Aviso al usuario de que se encuentra por debajo de los par&aacute;metros de seguridad.</span></strong></div>
+<br />
+<br />
+Es la v&aacute;lvula denominada FV19.&nbsp;No podr&aacute; accederse a esta pantalla mientras la caldera est&eacute; siendo operada en MODO MANTENIMIENTO. Si fuera operada aparecer&aacute; un mensaje indicando tal circunstancia.<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5593.png" style="width: 463px; height: 157px;" /><br />
+	<br />
+	<strong><span style="line-height: 12px;">Figura 94. Aviso al usuario de que se encuentra en modo mantenimiento.</span></strong><br />
+	<br />
+	&nbsp;</div>
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5732.jpg" style="height: 544px; width: 680px;" /><br />
+	<br />
+	<strong><span style="line-height: 12px;">Figura 95. Pantalla de&nbsp;</span></strong><strong><span style="line-height: 12px;">V&aacute;lvula de control del colector de vapor FV19.</span></strong></div>
+<br />
+Una vez que se haya accedido a la pantalla se mostrar&aacute;n los siguientes elementos:<br />
+<br />
+<ul class="lista_desordenada">
+	<li>
+		<strong>Bot&oacute;n de AUTO / MANUAL</strong>&nbsp;<span style="font-family: Wingdings, serif; line-height: 12px;"></span>&nbsp;Situado en la parte superior izquierda posibilita cambiar el estado del lazo de control. El lazo en autom&aacute;tico no podr&aacute; ser operado por el usuario sino que simplemente permite la posibilidad de manejar la consigna. En manual podr&aacute; operarse para poder cambiar la apertura de la v&aacute;lvula independientemente de la consigna.</li>
+	<li>
+		Consigna del lazo para la generaci&oacute;n de vapor.</li>
+	<li>
+		Sin&oacute;ptico de una v&aacute;lvula para la visualizaci&oacute;n del caudal de vapor lanzado.</li>
+	<li>
+		En la parte de la derecha se encuentran las tendencias de los valores que influyen en el lazo de control y sus valores. Los valores de esta &aacute;rea son solamente de visualizaci&oacute;n.</li>
+</ul>
+Para cerrar la pantalla simplemente deberemos de pulsar el bot&oacute;n &ldquo;X&rdquo; situado en el men&uacute; de la misma.<br />
+<br />
+<br />
+<span style="color:#003366;"><strong>PARADA DE LA CALDERA </strong></span><br />
+<br />
+La parada de la caldera se puede realizar de dos modos diferentes:<br />
+<ul class="lista_desordenada">
+	<br />
+	<li>
+		PARADA DE EMERGENCIA.</li>
+	<li>
+		PARADA NORMAL.</li>
+</ul>
+<br />
+<span style="color:#ff8c00;"><strong>PARADA DE EMERGENCIA </strong></span><br />
+<br />
+La parada de emergencia se realizar&aacute; pulsando la seta de emergencia situada en la parte superior izquierda en todas las pantallas.<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5710.jpg" style="width: 680px; height: 544px;" /><br />
+	<br />
+	<strong><span style="line-height: 12px;">Figura 96. Parada de emergencia de la caldera.</span></strong></div>
+<br />
+<br />
+Pulsado el bot&oacute;n de emergencia, el sistema realizar&aacute; una parada total del sistema. La seta de emergencia es un elemento que se queda enclavado. Esto quiere decir, que es un elemento que queda fijo y que debe de ser el propio operador el que quite este elemento.<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5711.png" style="width: 167px; height: 144px;" /><br />
+	<br />
+	<strong><span style="line-height: 12px;">Figura 97. Seta de emergencia.</span></strong></div>
+<br />
+<br />
+Para indicar al operador que el elemento se encuentra enclavado, aparece recuadrado en rojo.<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5712.png" style="width: 167px; height: 144px;" /><br />
+	<br />
+	<strong><span style="line-height: 12px;">Figura 98. Seta de emergencia enclavada.</span></strong></div>
+<br />
+Hasta que el operador no quite el enclavamiento pulsando de nuevo sobre la seta, la caldera no volver&aacute; a operaci&oacute;n por mucho que el usuario lo intente.<br />
+<br />
+A su vez aparecer&aacute; en el &quot;alarmero&quot;, la indicaci&oacute;n que la seta de emergencia se encuentra pulsada. Nos aparecer&aacute; una alarma de &ldquo;SETA DE EMERGENCIA&rdquo; con la consigna &ldquo;CFN&rdquo; que significa &ldquo;<em>Change from Normal</em>&rdquo;.<br />
+<br />
+<br />
+<span style="color:#ff8c00;"><strong>PARADA NORMAL </strong></span><br />
+<br />
+La parada normal se realizar&aacute; pulsando el bot&oacute;n de PARADA NORMAL situada en la parte inferior derecha de la pantalla de operaci&oacute;n de la caldera.<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5713.jpg" style="width: 680px; height: 544px;" /><br />
+	<br />
+	<strong><span style="line-height: 12px;">Figura 99. Parada normal de la caldera.</span></strong></div>
+<br />
+<br />
+Una vez pulsado este bot&oacute;n, el sistema realizar&aacute; una parada secuencial.<br />
+<br />
+<div style="text-align: center;">
+	<img alt="" src="data/files/5714.png" style="width: 123px; height: 113px;" /><br />
+	<br />
+	<strong><span style="line-height: 12px;">Figura 100. Bot&oacute;n de parada normal.</span></strong></div>
+<br />
+El orden de parada ser&aacute;n el sistema de gas, las soplantes y quemadores y finalmente el sistema de alimentaci&oacute;n de agua.<br />
+<br />
+Para volver a operar, el usuario deber&aacute; realizar el arranque normal de operaci&oacute;n de la caldera.
+                    <div class="clear-fix"></div>
+               <!--BOTONES-->
+               <div class="botones">
+                   <div class="bt_prev"><div class="bt_gris_gadient footer_bt_prev flotar_l" onclick="IrA('page_1857.html')"><div class="img_prev"></div></div><div class="flotar_l">3.2.1 Control de combustión</div></div>
+        <div class="bt_next"><div class="bt_gris_gadient footer_bt_next flotar_r" onclick="IrA('page_1765.html')" ><div class="img_next"></div></div><div class="flotar_r">4. CASOS PRÁCTICOS Y EJERCICIOS <op></op></div></div>
+               </div>
+               <!--FIN BOTONES-->
+               <div class="clear-fix"></div>               
+               </div>
+               <!--FIN CONTENT COL CENTRAL-->
+               </td>
+               <!--FIN COL CENTRAL-->
+               
+               <!--MENU HERRAMIENTAS-->
+               <td class="menu_herramientas" valign="top">
+               		<table><tr>
+								<td>
+								<!--BT--><div class="bt"><div class="cabecera_bt bt_1"><div class="titulo">Buscador</div></div></div>
+								<div class="clear-fix"></div>
+								<div class="content_menu" nro="0">
+									<input class="buscador" type="text" value=""/>
+									<div class="button_naranja flotar_l" id="reset">Desmarcar</div>
+									<div class="button_naranja flotar_r" id="buscar">Buscar</div>
+									<div class="clear-fix"></div>
+								</div>
+								</td>
+							 </tr><tr>
+                    						<td>
+											<!--BT--><div class="bt"><div class="cabecera_bt bt_3"><div class="titulo">Archivos</div></div></div>
+											<div class="clear-fix"></div>
+											<div class="content_menu documentos" nro="2">
+												<div class="content_documentos"><div class="item_doc" onclick="irABlank('data/files/5312.pdf')"><div class="icono uno"></div><div class="texto">Reglamento de Equipos a Presión</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('data/files/5332.pdf')"><div class="icono uno"></div><div class="texto">Manual de instalación y uso de entorno 3d</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('data/files/5815.pdf')"><div class="icono uno"></div><div class="texto">bibliografía_libro_calderas</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('data/files/5822.pdf')"><div class="icono uno"></div><div class="texto">Referencias Multimedia Módulo Operativo</div><div class="icono_flechita"></div><div class="clear-fix"></div></div></div>
+											</div>
+											</td>
+										</tr> <tr>
+											<td>                        
+											<!--BT--><div class="bt"><div class="cabecera_bt bt_5"><div class="titulo">V&iacute;nculos web</div></div></div>
+											<div class="clear-fix"></div>
+											<div class="content_menu" nro="4">
+												<div class="content_vinvulos"><div class="item_doc" onclick="irABlank('http://es.wikipedia.org/w/index.php?title=Bomba_centr%C3%ADfuga&oldid=64750852')"><div class="icono uno"></div><div class="texto">Bomba Centrífuga</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('http://es.wikipedia.org/w/index.php?title=Control_de_nivel&oldid=59846470')"><div class="icono uno"></div><div class="texto">Control de nivel</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('http://www.pagina66.com/2011/03/01/expertos-el-color-de-la-llama/')"><div class="icono uno"></div><div class="texto">Color de la llama</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('http://libros.redsauce.net')"><div class="icono uno"></div><div class="texto">Centrales térmicas</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('http://www.agenciaandaluzadelaenergia.es/glosary/list')"><div class="icono uno"></div><div class="texto">Glosario de términos</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('http://www.juntadeandalucia.es/organismos/economiainnovacioncienciayempleo/areas/industria/instaladores/paginas/operador-industrial-de-calderas.html')"><div class="icono uno"></div><div class="texto">Examen Operador de Calderas</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('http://www.monografias.com/trabajos93/descripcion-del-funcionamiento-generador-vapor/descripcion-del-funcionamiento-generador-vapor.shtml')"><div class="icono uno"></div><div class="texto">Generador de vapor</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('http://www.babcock-wanson.es/hi/calderas_pirotubulares.htm')"><div class="icono uno"></div><div class="texto">Calderas y Accesorios</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('http://www.eminfor.com/es/arti03.htm')"><div class="icono uno"></div><div class="texto">UNE-EN 12953-10:2004</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('http://www.valtec-umisa.es/web/?lang=es')"><div class="icono uno"></div><div class="texto">Valtec-Umisa</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('http://es.slideshare.net/siulorot89/18360134-manualcalderas')"><div class="icono uno"></div><div class="texto">Manual de calderas Industriales</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('http://www.fenercom.com/pdf/publicaciones/Guia-basica-calderas-industriales-eficientes-fenercom-2013.pdf')"><div class="icono uno"></div><div class="texto">Guía calderas industriales</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('http://www.spiraxsarco.com/es/')"><div class="icono uno"></div><div class="texto">Calderas spiraxsarco</div><div class="icono_flechita"></div><div class="clear-fix"></div></div><div class="item_doc" onclick="irABlank('http://187.141.81.212/biblioteca/MAQUINAS/libro%20Calderas.pdf')"><div class="icono uno"></div><div class="texto">Libro calderas</div><div class="icono_flechita"></div><div class="clear-fix"></div></div></div>
+											</div>
+											</td>
+										</tr></table>
+               </td>
+               <!--FIN MENU HERRAMIENTAS-->
+            <!--CONTENT COL CENTRAL MENU DERECHO-->
+            </tr>
+            </table>
+			
+			<!-- NUMERO DE PAGINA -->
+			<div class="clear-fix"></div> 
+			<div class="number-of-page">P&aacute;gina 93</div>
+			<div class="clear-fix"></div>
+			
+            <!--FOOTER-->
+            <div class="footer">
+            	<!--BOTONES-->
+                <div class="botones">
+                    <div onclick="openDialog('creditos', '825', '385', 'CRÉDITOS')" class="bt">Créditos</div>
+                    <div class="sep">></div>
+                    <div onclick="openDialog('aviso_legal', '825', '385', 'AVISO LEGAL')" class="bt">Aviso legal</div>
+                </div>
+                <!--FIN BOTONES-->
+				<!--SPONSOR-->
+                <div class="sponsor">
+                	<img src="../core/imgs/sponsor.jpg" />
+                </div>
+                <!--SPONSOR--> 
+            </div>
+            <!--FIN FOOTER-->
+        </div>
+        <!--FIN CONTENT-->
+    	<!--BAR RIGHT<div class="bar_right"></div>-->
+    </div>
+    <!--FIN BODY-->
+</body>
+</html>

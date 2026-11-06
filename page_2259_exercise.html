@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title></title>
+		
+        <!-- FAVICON --><link rel="shortcut icon" href="../core/imgs/favicon.ico">
+        
+        <!-- CSS PLUG --><link rel="stylesheet" type="text/css" href="../core/css/ebook.css" />
+        <!-- CSS PLUG --><link rel="stylesheet" type="text/css" href="../core/css/exercises.css" />
+		<!-- CSS PLUG --><!--[if IE 7]><link rel="stylesheet" type="text/css" href="../core/css/ie7.css" /><![endif]-->  
+		
+        <!-- JS PLUG --><script type="text/javascript" language="javascript" src="../core/js/config.js"></script>
+        <!-- JS PLUG --><script type="text/javascript" language="javascript" src="../core/js/core.js"></script>
+        <!-- JS PLUG --><script type="text/javascript" language="javascript" src="../core/js/exercises.js"></script>
+		
+        <script type="text/javascript" language="javascript">
+			$(document).ready(function(){
+				$("body").autoFormsDisplay({"tabs":"","exercise":{"jsTemplate":"all_in_one","order":"0","html":"","alignments":{"data":[{"id":"1","label":"list"},{"id":"2","label":"inline"},{"id":"3","label":"table"},{"id":"4","label":"float"}],"id_alignment":"1"},"config":{"display":"list","data":{"compositequiz":{"quizzes":{"quiz":{"rubric":"<strong>Introducir los siguientes valores:<\/strong>&nbsp;","pathImage":"data\/images\/","pathSwf":"data\/animations\/","pathSCO":"http:\/\/","cross_reference":"","order":"0","audioPlayer":{"audio":"","order":""},"image":{"path":"","order":""},"config":{"listen":false,"responsetype_id":"1","element_id":"2259","viewSolution":"2","nextExercise":"","caseSensitive":"false","strictMode":"false","modelAnswer":"0","ignoreI":"0","ignorePEA":"0","random":"0","render_in":"{\"onlytablet\":\"false\",\"alldevices\":\"false\"}","reading_text":"{\"reading\":\"\",\"align\":\"left\",\"width\":\"\",\"height\":\"\"}","buttons":{"button":["reset","finished"]},"setup":{"multipleAnswers":"false","autoModelAnswer":"false"}},"questionGroup":{"question":[{"label":"1","data":"","audioButton":{"audio":""},"questionItems":{"item":[{"direction":"","label":"","legend":"","type":"text","#cdata-section":"Ganancia cr&iacute;tica: &nbsp;<br \/>\n<br \/>\n"},{"maxChars":"","autoanswer":"false","erroranswer":"","group":"","type":"input","direction":"","evaluate":"true","ckeditor":"false","textarea":"false","answers":{"answer":[""],"model_answer":[""]}}]}},{"label":"2","data":"","audioButton":{"audio":""},"questionItems":{"item":[{"direction":"","label":"","legend":"","type":"text","#cdata-section":"Per&iacute;odo de oscilaci&oacute;n sostenida:&nbsp;<br \/>\n<br \/>\n"},{"maxChars":"","autoanswer":"false","erroranswer":"","group":"","type":"input","direction":"","evaluate":"true","ckeditor":"false","textarea":"false","answers":{"answer":[""],"model_answer":[""]}}]}},{"label":"3","data":"","audioButton":{"audio":""},"questionItems":{"item":[{"direction":"","label":"","legend":"","type":"text","#cdata-section":"Ganancia de sintonizaci&oacute;n del lazo propuesta por el alumno:<br \/>\n<br \/>\n"},{"maxChars":"","autoanswer":"false","erroranswer":"","group":"","type":"input","direction":"","evaluate":"true","ckeditor":"false","textarea":"false","answers":{"answer":[""],"model_answer":[""]}}]}},{"label":"4","data":"","audioButton":{"audio":""},"questionItems":{"item":[{"direction":"","label":"","legend":"","type":"text","#cdata-section":"Tiempo integral de sintonizaci&oacute;n del lazo propuesta por el alumno:<br \/>\n<br \/>\n"},{"maxChars":"","autoanswer":"false","erroranswer":"","group":"","type":"input","direction":"","evaluate":"true","ckeditor":"false","textarea":"false","answers":{"answer":[""],"model_answer":[""]}}]}}]}}}}},"hideLegendOnDrop":"false","presentation":"","input":"input","book":{"unit":"4","exercise":"Comprobaci\u00f3n de resultados","book":"Cartagena Teor\u00eda Calderas 1","pagepath":"\/201\/1765\/1770\/1855\/","book_id":"2001","section":"4. CASOS PR\u00c1CTICOS Y EJERCICIOS <op><\/op>\/4.5 Caso pr\u00e1ctico V\/"}}},"support_contents":[{"title":"rules","content":"<div>\n\t<strong>Indicadores de logro<\/strong><\/div>\n<ul class=\"lista_desordenada\">\n\t<li>\n\t\tEl tutor de la plataforma on-line recibir&aacute; los ajustes realizados por el alumno.<\/li>\n\t<li>\n\t\tEn base a los valores recibidos, decidir&aacute; si el alumno ha superado, o no, el ejercicio pr&aacute;ctico.<\/li>\n<\/ul>\n<br \/>\n<br \/>","order":"1","showAsImage":"0"}]});
+				   $(".exercise").show(); 
+				   $(".prnt").hide();
+				   $(".navegacion_sco_link").hide();
+				$('.prnt').show();
+				
+				//SETEANDO VALORES ORIGINALES DE FUENTE
+				setOriginalSize( $('.central') );
+				
+				// OFFLINE-MODE
+				if( String(window.location.href).indexOf("file:///")>=0 ){
+					setTimeout(function(){
+						try{
+							if( window.parent ){
+								window.parent.postMessage($(document).height()+"","*");
+							}
+						}catch(e){
+							console.log(e);
+						}
+					}, 100);
+				}
+			});					   
+		</script>
+		
+		<!-- JS PLUG --><script type="text/javascript" language="javascript" src="../core/js/iframe.js"></script>
+		
+		<style>
+			.drag-and-drop{margin-left: 8px;}
+			body{background: #E9F0FA;}
+		</style>
+    </head>
+    <body> 
+        <!-- EXERCISE -->
+		<div class="central">
+        	<div class="page">
+			<div class="prnt" style="float:right;margin: 5px 15px 0 0;cursor: pointer;display: none;"><img class="print" src="../core/imgs/pearlescent/autoforms/ico_print.gif" alt="print" title="Imprimir ejercicio" /></div>
+			<div id="instructions" style="padding: 15px 15px 0px 9px;"><div class="content"></div></div>
+			<div class="workbook-relation" style="display: none;margin-left: 15px;"></div>
+			<div class="clear-fix"></div>
+			<div class="exercise" id="test" style="padding: 10px 10px 60px 10px;">
+				<ul class="anchor-navigation"></ul>
+				<div class="exercise-bar"></div>
+				<div class="exercise-feedback"></div>
+			</div>
+            </div>
+		</div>
+        <!-- ENDING EXERCISE --> 
+    </body>
+</html>
